@@ -1,11 +1,29 @@
-# Introduction
- 
-Welcome to Nextra! This is a basic docs template. You can use it as a starting point for your own project :)
+# Atono Glossary
 
-## What is Nextra?
+A complete reference for every concept, term, and feature in Atono — from acceptance criteria to workspace roles.
 
-A **simple**, **powerful** and **flexible** site generation framework with everything you love from Next.js.
+## How to use this glossary
 
-## Documentation
+Browse 122 concepts alphabetically in the **Glossary** section in the sidebar. Each page covers:
 
-The documentation is available at [https://nextra.site](https://nextra.site).
+- **Definition** — what the concept means in Atono
+- **Also Known As** — synonyms and aliases used in the product
+- **Related Concepts** — linked terms to explore next
+
+## Managing concepts
+
+Concepts are stored in [`data/concepts.json`](https://github.com/shuding/nextra-docs-template). The management script regenerates all pages from that file.
+
+```bash
+# List all concepts and their URL slugs
+node scripts/manage-concepts.mjs list
+
+# Add a new concept interactively
+node scripts/manage-concepts.mjs add
+
+# Delete a concept by its slug
+node scripts/manage-concepts.mjs delete <slug>
+
+# Regenerate all pages after editing data/concepts.json directly
+node scripts/manage-concepts.mjs generate
+```
