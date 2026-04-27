@@ -1,7 +1,51 @@
-import ConceptManager from '../components/ConceptManager'
-
 # Manage Concepts
 
-Add new concepts or delete existing ones. Changes take effect immediately — each concept gets its own glossary page with links to related concepts.
+This is a static site — concepts are managed via a CLI script that writes to [`data/concepts.json`](https://github.com/shuding/nextra-docs-template/blob/main/data/concepts.json) and regenerates the glossary pages. Run `pnpm build` after any change to publish the updated site.
 
-<ConceptManager />
+## Add a concept
+
+```bash
+node scripts/manage-concepts.mjs add
+```
+
+You'll be prompted for:
+
+| Field | Required | Notes |
+|---|---|---|
+| Name | Yes | Displayed as the page title and in the sidebar |
+| Definition | Yes | Full plain-English description |
+| Synonyms | No | Comma-separated aliases (e.g. `ACs, Acceptance Conditions`) |
+| Related concepts | No | Comma-separated names of other concepts (e.g. `Story, Epic`) |
+
+## Delete a concept
+
+First find the slug with `list`, then delete by slug:
+
+```bash
+node scripts/manage-concepts.mjs list
+node scripts/manage-concepts.mjs delete <slug>
+```
+
+Example:
+
+```bash
+node scripts/manage-concepts.mjs delete acceptance-criteria
+```
+
+## Edit a concept
+
+Edit [`data/concepts.json`](https://github.com/shuding/nextra-docs-template/blob/main/data/concepts.json) directly, then regenerate:
+
+```bash
+node scripts/manage-concepts.mjs generate
+```
+
+## Publish changes
+
+After any add, edit, or delete, rebuild and redeploy the site:
+
+```bash
+pnpm build
+```
+
+The static output is written to the `out/` directory.
