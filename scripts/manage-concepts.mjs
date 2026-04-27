@@ -60,11 +60,33 @@ function buildMdx(concept, allConcepts) {
   return content
 }
 
+function buildIndexMdx(concepts) {
+  const sorted = [...concepts].sort((a, b) => a.name.localeCompare(b.name))
+  const byLetter = {}
+  for (const concept of sorted) {
+    const letter = concept.name[0].toUpperCase()
+    if (!byLetter[letter]) byLetter[letter] = []
+    byLetter[letter].push(concept)
+  }
+
+  let content = `# Glossary\n\nA complete reference for every concept and feature in Atono — ${concepts.length} entries.\n\n`
+  for (const letter of Object.keys(byLetter).sort()) {
+    content += `## ${letter}\n\n`
+    for (const concept of byLetter[letter]) {
+      const summary = escapeForMdx(concept.definition.split('.')[0])
+      content += `- [${concept.name}](/glossary/${toSlug(concept.name)}) — ${summary}.\n`
+    }
+    content += '\n'
+  }
+  return content
+}
+
 function generate() {
   const concepts = readConcepts()
   if (!fs.existsSync(GLOSSARY_DIR)) fs.mkdirSync(GLOSSARY_DIR, { recursive: true })
 
   const currentSlugs = new Set(concepts.map(c => toSlug(c.name)))
+  currentSlugs.add('index')
   for (const file of fs.readdirSync(GLOSSARY_DIR)) {
     if (!file.endsWith('.mdx')) continue
     const slug = file.replace('.mdx', '')
@@ -78,11 +100,14 @@ function generate() {
     fs.writeFileSync(path.join(GLOSSARY_DIR, `${toSlug(concept.name)}.mdx`), buildMdx(concept, concepts))
   }
 
+  // Index page at /glossary
+  fs.writeFileSync(path.join(GLOSSARY_DIR, 'index.mdx'), buildIndexMdx(concepts))
+
   const sorted = [...concepts].sort((a, b) => a.name.localeCompare(b.name))
-  const meta = Object.fromEntries(sorted.map(c => [toSlug(c.name), c.name]))
+  const meta = { index: 'Overview', ...Object.fromEntries(sorted.map(c => [toSlug(c.name), c.name])) }
   fs.writeFileSync(path.join(GLOSSARY_DIR, '_meta.json'), JSON.stringify(meta, null, 2) + '\n')
 
-  console.log(`Generated ${concepts.length} concept pages and _meta.json`)
+  console.log(`Generated ${concepts.length} concept pages, index, and _meta.json`)
 }
 
 function list() {
