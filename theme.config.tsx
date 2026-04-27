@@ -2,6 +2,12 @@ import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
 
 const config: DocsThemeConfig = {
+  head: (
+    <>
+      <meta name="readme-subdomain" content="atono" />
+      <meta name="loadedProject" content="atono" />
+    </>
+  ),
   logo: <span style={{ fontWeight: 700 }}>Atono Glossary</span>,
   project: {
     link: 'https://github.com/shuding/nextra-docs-template',
