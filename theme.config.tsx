@@ -13,8 +13,15 @@ const config: DocsThemeConfig = {
   useNextSeoProps() {
     return {
       titleTemplate: '%s – Atono Glossary',
+      description: 'Complete reference for every concept and feature in Atono.',
+      openGraph: {
+        siteName: 'Atono Glossary',
+      },
     }
   },
+  main: ({ children }) => (
+    <div className="markdown-body">{children}</div>
+  ),
 }
 
 export default config
