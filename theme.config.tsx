@@ -5,6 +5,8 @@ const config: DocsThemeConfig = {
   head: (
     <>
       <meta name="readme-subdomain" content="atono" />
+      <meta name="readme-repo" content="atono-e6ac7ee0af02" />
+      <meta name="readme-version" content="1.0" />
       <meta name="loadedProject" content="atono" />
     </>
   ),
@@ -26,7 +28,7 @@ const config: DocsThemeConfig = {
     }
   },
   main: ({ children }) => (
-    <div className="markdown-body">{children}</div>
+    <div className="rm-Markdown markdown-body" data-testid="RDMD">{children}</div>
   ),
 }
 
