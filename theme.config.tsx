@@ -1,5 +1,8 @@
 import React from 'react'
+import { useRouter } from 'next/router'
 import { DocsThemeConfig } from 'nextra-theme-docs'
+
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://documentation-starter-kit-gilt-chi.vercel.app'
 
 const config: DocsThemeConfig = {
   head: (
@@ -19,11 +22,15 @@ const config: DocsThemeConfig = {
     text: 'Atono Glossary',
   },
   useNextSeoProps() {
+    const { asPath } = useRouter()
+    const canonicalUrl = `${BASE_URL}${asPath}`
     return {
       titleTemplate: '%s – Atono Glossary',
       description: 'Complete reference for every concept and feature in Atono.',
+      canonical: canonicalUrl,
       openGraph: {
         siteName: 'Atono Glossary',
+        url: canonicalUrl,
       },
     }
   },
