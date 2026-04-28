@@ -276,22 +276,27 @@
     ]
   },
   {
-    "name": "Completed Date",
-    "definition": "The date an item was last moved into a workflow step in the Done category. Used in filters and reports to identify finished work.",
-    "synonyms": [],
-    "related": [
-      "Done (Workflow Category)",
-      "Everything (Page)",
-      "Workflow Step"
-    ]
-  },
-  {
     "name": "Concept",
     "definition": "An individual entry in the Product Knowledge glossary, typically including a name, plain-English description, synonyms/aliases, and related concepts. Concepts can be added manually or extracted from documentation, edited, deleted, restored, and have version history.",
     "synonyms": [],
     "related": [
       "Glossary",
       "Product Knowledge"
+    ]
+  },
+  {
+    "name": "Customer",
+    "definition": "A named tenant or organization whose users interact with your product, identified by a string value passed to the Atono SDK or Chrome extension. Used to scope feature flag slices to specific customers and to filter Feature Engagement graphs. Customer values appear in Slice conditions, usage tracking events, and Engagement page filters.",
+    "synonyms": [
+      "Tenant"
+    ],
+    "related": [
+      "Atono Chrome Extension",
+      "Feature Engagement",
+      "Location",
+      "SDK",
+      "Slice",
+      "Usage Tracking"
     ]
   },
   {
@@ -866,16 +871,6 @@
     ]
   },
   {
-    "name": "Reporter",
-    "definition": "The user recorded as reporting a bug, which may differ from the user who created the bug in Atono. Can be changed from the bug details panel. Appears in Activities when modified.",
-    "synonyms": [],
-    "related": [
-      "Activities",
-      "Assignee",
-      "Bug"
-    ]
-  },
-  {
     "name": "Risk Rating",
     "definition": "A numerical assessment of a bug's overall risk, calculated by multiplying probability (1-5) by impact (1-5) to produce a value from 1-25, where 25 is highest risk. Can be manually set or suggested by Atono based on bug description. Required along with team assignment for a bug to move out of Bug Triage.",
     "synonyms": [],
@@ -1048,16 +1043,6 @@
     ]
   },
   {
-    "name": "SSO Mode",
-    "definition": "A workspace setting controlling how SSO is applied: On (all users use SSO), Off (all users use email login), or Testing (only Workspace Owners and Administrators use SSO). Changing modes may invalidate existing sessions. Set during initial SSO configuration or updated anytime by Workspace Owners/Administrators.",
-    "synonyms": [],
-    "related": [
-      "Administrator",
-      "SSO",
-      "Workspace Owner"
-    ]
-  },
-  {
     "name": "Stakeholder",
     "definition": "A user with a critical team role (Team Administrator or Backlog Owner) who is not a team member. Displayed in a separate Stakeholders section on the Team Overview page for visibility.",
     "synonyms": [],
@@ -1198,6 +1183,23 @@
     ]
   },
   {
+    "name": "Team Overview (Page)",
+    "definition": "A team page showing general information about a team including its name, description, methodology (Scrum or Kanban), access type (public or private), members, and stakeholders. Stakeholders — users with a critical team role (Team Administrator or Backlog Owner) who are not team members — appear in a dedicated section for visibility.",
+    "synonyms": [
+      "Team Overview"
+    ],
+    "related": [
+      "Backlog Owner",
+      "Kanban",
+      "Private Team",
+      "Scrum",
+      "Stakeholder",
+      "Team",
+      "Team Administrator",
+      "Team Member"
+    ]
+  },
+  {
     "name": "Technical Changes",
     "definition": "An AI Context section recording current implementation changes made by AI tools for a story or bug. Includes what was added/changed/removed, test updates, behavior changes, and outcomes. Reflects current state; reverted changes should be removed. Also called SUMMARY in MCP contexts.",
     "synonyms": [
@@ -1313,6 +1315,20 @@
       "Sprint",
       "Sprint Calendar",
       "Story Points"
+    ]
+  },
+  {
+    "name": "Velocity Averaging Window",
+    "definition": "A team-level setting controlling how many recent completed sprints are used to calculate velocity. A shorter window reacts faster to recent performance; a longer window smooths out outlier sprints. Configured by Team Administrators and affects sprint capacity projections on the Sprint Calendar and Backlog.",
+    "synonyms": [
+      "Averaging Window"
+    ],
+    "related": [
+      "Scrum",
+      "Sprint",
+      "Sprint Calendar",
+      "Team Administrator",
+      "Velocity"
     ]
   },
   {
