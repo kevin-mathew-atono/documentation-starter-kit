@@ -263,14 +263,6 @@
     ]
   },
   {
-    "name": "Capy",
-    "definition": "Atono's capybara mascot representing calm, collaborative energy and team spirit. Also the name of the Ask Capy AI assistant.",
-    "synonyms": [],
-    "related": [
-      "Ask Capy"
-    ]
-  },
-  {
     "name": "Comment",
     "definition": "Feedback or discussion added to a story or bug, either generally or on specific highlighted text or acceptance criteria. Supports @mentions for notifications, inline item ID linking, clickable URLs with highlighting, and actions (accept, reject, edit, delete). Active comments appear in a dedicated panel; addressed comments move to Activities.",
     "synonyms": [],
@@ -339,14 +331,6 @@
       "AI Context",
       "Story"
     ]
-  },
-  {
-    "name": "Docker",
-    "definition": "Container platform required to run the Atono MCP Server locally. Must be installed and running in the background for AI tools to connect to Atono.",
-    "synonyms": [
-      "Docker Desktop"
-    ],
-    "related": []
   },
   {
     "name": "Done (Workflow Category)",
@@ -559,6 +543,17 @@
     ]
   },
   {
+    "name": "GitHub Integration",
+    "definition": "A workspace integration connecting Atono to a GitHub organization, enabling automatic linking of pull requests to stories and bugs. Pull requests are linked when the story or bug ID appears in the PR title, description, branch name, or optionally in comments and commit messages. Requires a Workspace Owner or Administrator to configure.",
+    "synonyms": [],
+    "related": [
+      "Activities",
+      "Bug",
+      "Pull Request",
+      "Story"
+    ]
+  },
+  {
     "name": "Glossary",
     "definition": "A structured, exportable collection of up to 200 key product concepts built from documentation by Product Knowledge. Each concept includes name, description, synonyms, and related concepts. Managed by Glossary Contributors and Glossary Owners with version history and conflict detection. Exported as TSV for use in AI tools.",
     "synonyms": [],
@@ -683,6 +678,18 @@
     ]
   },
   {
+    "name": "Location",
+    "definition": "A geographic attribute derived from a user's IP address at the time of a feature flag evaluation or usage tracking event. Used as a slice condition in feature flag configurations to enable or disable features for users in specific regions. Atono automatically detects location without requiring explicit values from the SDK caller.",
+    "synonyms": [],
+    "related": [
+      "Feature Flag",
+      "Flag Configuration",
+      "SDK",
+      "Slice",
+      "Usage Tracking"
+    ]
+  },
+  {
     "name": "Last Evaluated",
     "definition": "The most recent timestamp when a feature flag was evaluated (checked for ON/OFF state) by the SDK across any environment. Displayed as relative time with details on hover showing evaluation history, stability, and how long the current value has been returned. 'Not yet evaluated' means the flag has never been checked.",
     "synonyms": [],
@@ -726,16 +733,6 @@
     ]
   },
   {
-    "name": "MCP",
-    "definition": "Model Context Protocol, an open protocol allowing AI tools to securely connect to external systems and use their data and actions in context. Implemented by the Atono MCP Server to connect AI development tools to Atono workspaces.",
-    "synonyms": [
-      "Model Context Protocol"
-    ],
-    "related": [
-      "AI Context"
-    ]
-  },
-  {
     "name": "Meta Tag",
     "definition": "An HTML metadata snippet in a webpage's <head> section providing information to tools. The Atono Chrome extension requires an atono:environment meta tag (always) and atono:tenancy meta tag (for multi-tenant apps) to function correctly.",
     "synonyms": [],
@@ -772,6 +769,18 @@
     "related": [
       "Story",
       "User Story"
+    ]
+  },
+  {
+    "name": "Private Team",
+    "definition": "A team with restricted visibility where only team members, Team Administrators, Backlog Owners, and Workspace Owners/Administrators can see the team's backlog and work items. Non-members see the team name but not its contents. Team members of a private team can manage membership. Contrast with public teams, which any workspace user can access.",
+    "synonyms": [],
+    "related": [
+      "Backlog Owner",
+      "Team",
+      "Team Administrator",
+      "Team Member",
+      "Workspace Owner"
     ]
   },
   {
