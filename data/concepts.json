@@ -16,7 +16,7 @@
   },
   {
     "name": "Active Sprint",
-    "definition": "The current sprint a Scrum team is executing, visible on the team's In Progress page. Items in the active sprint contribute to sprint scope, burndown charts, and velocity tracking. Only one sprint per team can be active at a time.",
+    "definition": "The one sprint a Scrum team is currently executing. Only one sprint can be active per team at any time. Active sprint items appear on the In Progress page and count toward sprint scope, burndown charts, and velocity.",
     "synonyms": [],
     "related": [
       "Burndown Chart",
@@ -105,7 +105,7 @@
   },
   {
     "name": "Ask Capy",
-    "definition": "An AI assistant that answers questions about your product by searching completed stories and bugs in your workspace. Requires at least 10 completed items to function. Limited to 50 questions per workspace per day, with a counter that resets at midnight Eastern time. Shows source items for each answer.",
+    "definition": "An AI-powered Q&amp;A tool that searches completed stories and bugs in your workspace to answer product questions. Requires at least 10 completed items to activate. Each workspace gets 50 questions per day; the counter resets at midnight Eastern time. Every answer includes the source items it was drawn from.",
     "synonyms": [
       "Capy"
     ],
@@ -251,7 +251,7 @@
   },
   {
     "name": "Burndown Chart",
-    "definition": "A sprint-level chart for Scrum teams showing story points remaining over time compared to an ideal guideline. Displays actual progress, projected completion based on recent velocity, and highlights items at risk or available to pull in. Includes warnings before modifying sprint scope. Available for active and completed sprints but not future sprints. Uses team time zone for date grouping.",
+    "definition": "A Scrum team chart tracking how many story points remain in a sprint over time. Compares actual progress against an ideal burn rate, projects when the sprint will finish based on recent velocity, and flags items at risk of not completing or available to pull in. Accessible for active and completed sprints only. Warns before sprint scope is modified. Uses the team's time zone for date grouping.",
     "synonyms": [],
     "related": [
       "In Progress (Page)",
@@ -264,7 +264,7 @@
   },
   {
     "name": "Comment",
-    "definition": "Feedback or discussion added to a story or bug, either generally or on specific highlighted text or acceptance criteria. Supports @mentions for notifications, inline item ID linking, clickable URLs with highlighting, and actions (accept, reject, edit, delete). Active comments appear in a dedicated panel; addressed comments move to Activities.",
+    "definition": "A discussion thread on a story or bug, either on the item as a whole or anchored to specific highlighted text or an acceptance criterion. Supports @mentions (which trigger notifications), inline item ID references, and per-comment actions including accept, reject, edit, and delete. Open comments appear in a side panel; resolved comments are archived in Activities.",
     "synonyms": [],
     "related": [
       "Acceptance Criteria",
@@ -359,7 +359,7 @@
   },
   {
     "name": "Duplicate",
-    "definition": "A copy of an existing story or bug created with the same title (prefixed 'Copy of'), description, risk rating (bugs), and size/product theme (stories). Workflow step, assignee, backlog, and timebox handling varies by original item's category. Can optionally be linked to the original. Preserves team membership for items in To do/In Progress; unassigns items in Done/Won't do.",
+    "definition": "An action that creates a copy of a story or bug, prefixing its title with 'Copy of' and carrying over the description, risk rating (bugs), and size/product theme (stories). The copy's workflow step, assignee, backlog position, and timebox depend on the original item's workflow category. Items in To do or In Progress keep their team assignment; items in Done or Won't do are unassigned. The duplicate can optionally be linked to the original.",
     "synonyms": [],
     "related": [
       "Bug",
