@@ -176,5 +176,15 @@
   "workflow-step": "Workflow Step",
   "workspace": "Workspace",
   "workspace-owner": "Workspace Owner",
-  "workspace-role": "Workspace Role"
+  "workspace-role": "Workspace Role",
+  "scrum-master": "Scrum Master",
+  "product-owner": "Product Owner",
+  "product-backlog": "Product Backlog",
+  "sprint-backlog": "Sprint Backlog",
+  "release-notes": "Release Notes",
+  "incident": "Incident",
+  "postmortem": "Postmortem",
+  "feature-request": "Feature Request",
+  "user-feedback": "User Feedback",
+  "estimation": "Estimation"
 }

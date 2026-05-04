@@ -697,6 +697,23 @@
     ]
   },
   {
+    "name": "Estimation",
+    "definition": "The process of predicting the relative effort required to complete a story or bug, typically expressed in story points using a Fibonacci scale. Estimation is performed collaboratively by the development team — often using planning poker — to surface differing assumptions and reach a shared understanding. Estimates feed into sprint planning, velocity calculations, and projected completion dates. In Atono, estimation is captured as the story size field (XXS through XXL), which maps to story points used in burndown charts and total story point counts.",
+    "synonyms": [
+      "Story Estimation",
+      "Sizing"
+    ],
+    "related": [
+      "Burndown Chart",
+      "Capacity",
+      "Planning Poker",
+      "Sprint Planning",
+      "Story Points",
+      "Story Size",
+      "Velocity"
+    ]
+  },
+  {
     "name": "Everything (Page)",
     "definition": "A centralized, filterable view of all stories, bugs, and epics in the workspace that the user has permission to view. Supports multi-criteria filtering, sorting, saved/shared views, column customization, and bulk actions (add to timebox/product theme). Title shows visible/total item counts. Private team items are excluded or redacted based on permissions.",
     "synonyms": [],
@@ -737,6 +754,22 @@
       "SDK",
       "Slice",
       "Story"
+    ]
+  },
+  {
+    "name": "Feature Request",
+    "definition": "A suggestion from a user, customer, or stakeholder for new or improved product functionality. Feature requests are the raw material of product discovery and are evaluated against user needs, strategic goals, and delivery capacity before being accepted into the backlog. In Atono, feature requests are typically captured as stories in Story Refinement, where they are refined, sized, and prioritized before being assigned to a team backlog and sprint.",
+    "synonyms": [
+      "Enhancement Request",
+      "Product Request"
+    ],
+    "related": [
+      "Backlog (Page)",
+      "Epic",
+      "Product Discovery",
+      "Story",
+      "Story Refinement",
+      "User Feedback"
     ]
   },
   {
@@ -926,6 +959,22 @@
       "Done (Workflow Category)",
       "Workflow Category",
       "Workflow Step"
+    ]
+  },
+  {
+    "name": "Incident",
+    "definition": "An unplanned interruption or significant reduction in the quality of a production service. Incidents range from complete outages to degraded performance and typically require immediate investigation and resolution. In Atono, incidents are tracked as bugs with a high risk rating, using the affected environment field to indicate the impacted deployment stage and the description to capture reproduction steps, impact scope, and timeline. A postmortem may follow to prevent recurrence.",
+    "synonyms": [
+      "Production Incident",
+      "Outage"
+    ],
+    "related": [
+      "Affected Environment",
+      "Bug",
+      "Bug Triage",
+      "Environment",
+      "Postmortem",
+      "Risk Rating"
     ]
   },
   {
@@ -1218,6 +1267,22 @@
     ]
   },
   {
+    "name": "Postmortem",
+    "definition": "A structured retrospective analysis conducted after a production incident to understand what went wrong, why it happened, and how to prevent recurrence. Blameless postmortems focus on systemic causes rather than individual mistakes and produce concrete action items such as new tests, monitoring improvements, or process changes. In Atono, postmortem action items are typically captured as bugs or technical investigation stories linked to the original incident bug.",
+    "synonyms": [
+      "Post-Incident Review",
+      "Blameless Postmortem",
+      "Root Cause Analysis"
+    ],
+    "related": [
+      "Bug",
+      "Incident",
+      "Linked Items",
+      "Retrospective",
+      "Technical Investigation"
+    ]
+  },
+  {
     "name": "Priority",
     "definition": "A relative ranking of work items indicating their order of importance or urgency. In Atono, priority is expressed through backlog ordering: items higher in the backlog queue are expected to be worked on sooner. Teams can also use product themes or labels to signal strategic priority. Backlog owners are responsible for maintaining priority order when backlog management is enabled.",
     "synonyms": [],
@@ -1249,6 +1314,21 @@
       "Bug Triage",
       "Impact",
       "Risk Rating"
+    ]
+  },
+  {
+    "name": "Product Backlog",
+    "definition": "An ordered list of all work known to be needed in the product, maintained and prioritized by the product owner. The product backlog is never complete — it evolves as the product and its context change. Higher-priority items are more refined and ready to work on; lower-priority items may be rough ideas. In Atono, the product backlog is managed through a combination of the team Backlog page and Story Refinement, where ideas are captured and prepared before being committed to a team.",
+    "synonyms": [
+      "Backlog"
+    ],
+    "related": [
+      "Backlog (Page)",
+      "Backlog Management",
+      "Product Owner",
+      "Scrum",
+      "Sprint Backlog",
+      "Story Refinement"
     ]
   },
   {
@@ -1299,6 +1379,21 @@
       "Glossary Owner",
       "Product Theme",
       "Workspace Role"
+    ]
+  },
+  {
+    "name": "Product Owner",
+    "definition": "The Scrum role responsible for maximizing the value of the product by managing, ordering, and communicating the contents of the product backlog. The product owner is the single accountable person for backlog priority decisions and ensures the team always works on the highest-value items. In Atono, the product owner's responsibilities are typically held by a user with the Backlog Owner team role and the Product Manager workspace role, giving them control over backlog ordering, sprint planning, and product themes.",
+    "synonyms": [
+      "PO"
+    ],
+    "related": [
+      "Backlog Management",
+      "Backlog Owner",
+      "Product Backlog",
+      "Product Manager",
+      "Scrum",
+      "Sprint Planning"
     ]
   },
   {
@@ -1374,6 +1469,20 @@
       "Kanban",
       "Scrum",
       "Timeline"
+    ]
+  },
+  {
+    "name": "Release Notes",
+    "definition": "A document summarizing the new features, improvements, and bug fixes included in a product release, typically published when a release goes live. Release notes help users and stakeholders understand what has changed and why, reducing support burden and setting expectations. In Atono, the content for release notes is often sourced from completed stories and bugs linked to a specific release or timebox, using the release description and story acceptance criteria as the source of truth.",
+    "synonyms": [
+      "Changelog Entry",
+      "What's New"
+    ],
+    "related": [
+      "Bug",
+      "Release",
+      "Story",
+      "Timebox"
     ]
   },
   {
@@ -1507,6 +1616,24 @@
     ]
   },
   {
+    "name": "Scrum Master",
+    "definition": "The Scrum team role responsible for facilitating Scrum ceremonies, coaching the team on Scrum practices, and removing impediments that block progress. The Scrum Master is a servant-leader who protects the team from outside distractions, ensures the sprint goal stays visible, and drives continuous improvement through retrospectives. Scrum Master is not a formal permission role in Atono but is typically the team member who manages sprint cadence, maintains the burndown chart, and coordinates with stakeholders during sprint reviews.",
+    "synonyms": [
+      "SM",
+      "Agile Coach"
+    ],
+    "related": [
+      "Backlog Owner",
+      "Blocker",
+      "Burndown Chart",
+      "Daily Standup",
+      "Retrospective",
+      "Scrum",
+      "Sprint",
+      "Sprint Goal"
+    ]
+  },
+  {
     "name": "SDK",
     "definition": "Software Development Kit, a set of tools and libraries from Atono for integrating feature flags and usage tracking into applications. Available for web and React with client-side support. Requires environment key for initialization. Version 1.1.0+ required for usage tracking.",
     "synonyms": [],
@@ -1610,6 +1737,21 @@
       "Sprint Goal",
       "Story Points",
       "Velocity"
+    ]
+  },
+  {
+    "name": "Sprint Backlog",
+    "definition": "The set of product backlog items selected for a sprint, combined with the team's plan for delivering them toward the sprint goal. The sprint backlog is owned by the development team and is updated daily as work progresses. Items can be added or removed with caution, and Atono warns when sprint scope is modified after the sprint starts. The sprint backlog is visible on the In Progress and Backlog pages during an active sprint.",
+    "synonyms": [],
+    "related": [
+      "Active Sprint",
+      "Backlog (Page)",
+      "In Progress (Page)",
+      "Product Backlog",
+      "Scope",
+      "Scrum",
+      "Sprint",
+      "Sprint Goal"
     ]
   },
   {
@@ -1954,6 +2096,22 @@
       "Feature Engagement",
       "SDK",
       "Story"
+    ]
+  },
+  {
+    "name": "User Feedback",
+    "definition": "Input gathered from users through interviews, surveys, support tickets, usage analytics, or direct observation that reveals how people interact with the product and what problems they experience. User feedback drives feature requests, informs acceptance criteria, and validates product decisions. In Atono, insights from user feedback are typically documented in story descriptions or design decisions sections and may be linked to customer data visible through feature engagement and usage tracking.",
+    "synonyms": [
+      "Customer Feedback",
+      "Voice of the Customer"
+    ],
+    "related": [
+      "Customer",
+      "Design Decisions",
+      "Feature Engagement",
+      "Feature Request",
+      "Product Discovery",
+      "Usage Tracking"
     ]
   },
   {

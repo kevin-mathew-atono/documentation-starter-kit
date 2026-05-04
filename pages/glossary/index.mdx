@@ -1,14 +1,14 @@
 # Glossary
 
-A complete reference for every concept and feature in Atono — 177 entries.
+A complete reference for every concept and feature in Atono — 187 entries.
 
 ## A
 
 - [A/B Test](/glossary/a-b-test) — A controlled experiment that presents two or more variants of a feature to different user groups simultaneously and measures behavioral differences.
-- [Acceptance Criteria](/glossary/acceptance-criteria) — Testable conditions that define when a story is complete, written as a hierarchical list of requirements.
+- [Acceptance Criteria](/glossary/acceptance-criteria) — Testable conditions that define when a story is complete, written as a hierarchical list with up to three levels of nesting.
 - [Acceptance Rate](/glossary/acceptance-rate) — The percentage of stories or acceptance criteria that pass review on the first attempt without requiring rework or rejection.
 - [Acceptance Test](/glossary/acceptance-test) — A test that validates a story meets its acceptance criteria from the user's perspective.
-- [Active Sprint](/glossary/active-sprint) — The one sprint a Scrum team is currently executing.
+- [Active Sprint](/glossary/active-sprint) — The one sprint a Scrum team is currently executing toward a sprint goal.
 - [Activities](/glossary/activities) — A chronological, filterable log of all changes to a story, bug, epic, or feature flag including title changes, workflow transitions, assignments, comments, attachments, subtasks, and pull requests.
 - [Administrator](/glossary/administrator) — A workspace role with full administrative privileges including managing workspace settings, environments, users, integrations, and SSO configuration, but without access to billing.
 - [Affected Environment](/glossary/affected-environment) — One or more environments where a bug has been observed, selected from the workspace's configured environments such as development, staging, or production.
@@ -28,15 +28,15 @@ A complete reference for every concept and feature in Atono — 177 entries.
 ## B
 
 - [Backlog (Page)](/glossary/backlog-page) — A team page for planning and prioritizing upcoming work before it moves into execution.
-- [Backlog Management](/glossary/backlog-management) — A team setting that, when enabled, assigns backlog owners responsibility for managing upcoming stories including adding, creating, reordering in To do, deleting, and moving in/out of Won't do.
+- [Backlog Management](/glossary/backlog-management) — A team setting that, when enabled, designates specific backlog owners as the only users authorized to add, create, reorder, delete, or move stories in the To do and Won't do workflow categories.
 - [Backlog Owner](/glossary/backlog-owner) — A team role responsible for managing a team's planned work when Backlog Management is enabled.
 - [Baseline](/glossary/baseline) — A fixed reference snapshot of a project's original scope, estimates, or schedule used as a comparison point to measure change over time.
 - [Blocker](/glossary/blocker) — An impediment preventing a story or bug from progressing through the workflow.
 - [Board View](/glossary/board-view) — A visual display of work items organized in vertical columns, one per workflow step, allowing teams to see the state of all active work at a glance.
-- [Bug](/glossary/bug) — An error, flaw, or unintended behavior in software requiring resolution.
-- [Bug Triage](/glossary/bug-triage) — A workspace-wide process and page for evaluating and prioritizing reported bugs before assigning them to teams.
+- [Bug](/glossary/bug) — An error, flaw, or unintended behavior in software requiring investigation and resolution.
+- [Bug Triage](/glossary/bug-triage) — A workspace-wide page and process for evaluating newly reported bugs before they are assigned to a team.
 - [Bulk Edit](/glossary/bulk-edit) — Simultaneously applying a change to multiple selected stories or bugs at once.
-- [Burndown Chart](/glossary/burndown-chart) — A Scrum team chart tracking how many story points remain in a sprint over time.
+- [Burndown Chart](/glossary/burndown-chart) — A Scrum team chart tracking remaining story points in a sprint over time, updated as stories are completed or moved out of scope.
 - [Burnup Chart](/glossary/burnup-chart) — A chart showing two lines over time: total work scope and total work completed.
 
 ## C
@@ -48,7 +48,7 @@ A complete reference for every concept and feature in Atono — 177 entries.
 - [Continuous Integration](/glossary/continuous-integration) — A software development practice where team members merge code changes into a shared branch frequently, triggering automated builds and tests on each merge.
 - [Cumulative Flow Diagram](/glossary/cumulative-flow-diagram) — A stacked area chart showing the count of work items in each workflow state over time.
 - [Customer](/glossary/customer) — A named tenant or organization whose users interact with your product, identified by a string value passed to the Atono SDK or Chrome extension.
-- [Cycle Time](/glossary/cycle-time) — The total time a story or bug spends in workflow steps categorized as In Progress for a specific team.
+- [Cycle Time](/glossary/cycle-time) — The total time a story or bug spends in workflow steps assigned to the In Progress category for a specific team.
 - [Cycle Time Report](/glossary/cycle-time-report) — A team-specific report visualizing average cycle times for stories and bugs over a selected timeframe (1-60 months).
 
 ## D
@@ -69,15 +69,17 @@ A complete reference for every concept and feature in Atono — 177 entries.
 - [Engagement (Page)](/glossary/engagement-page) — A workspace page showing a Top Features graph that ranks up to 10 features by usage across the product.
 - [Environment](/glossary/environment) — A named stage in the software development lifecycle such as dev, test, stage, or prod, used to manage feature flags and track bugs.
 - [Environment Key](/glossary/environment-key) — A unique identifier for an environment, used to connect application code to Atono for feature flag evaluation and usage tracking.
-- [Epic](/glossary/epic) — A planning item that groups up to 100 related stories under a shared goal.
+- [Epic](/glossary/epic) — A planning item that groups related stories under a single shared goal, providing a high-level view of progress across multiple pieces of work.
 - [Estimated Completion Date](/glossary/estimated-completion-date) — A forecast for when items in a Kanban team's To do category will be completed, based on the team's average cycle time and the current backlog queue order.
+- [Estimation](/glossary/estimation) — The process of predicting the relative effort required to complete a story or bug, typically expressed in story points using a Fibonacci scale.
 - [Everything (Page)](/glossary/everything-page) — A centralized, filterable view of all stories, bugs, and epics in the workspace that the user has permission to view.
 
 ## F
 
 - [Feature Engagement](/glossary/feature-engagement) — A story-level usage graph showing how often a feature is used, filterable by environment, customer, or location.
-- [Feature Flag](/glossary/feature-flag) — A named toggle controlling feature visibility and behavior across environments without code deployment.
-- [Filter](/glossary/filter) — Criteria applied to narrow visible items in backlogs, the Everything page, timelines, or reports.
+- [Feature Flag](/glossary/feature-flag) — A named toggle controlling whether a feature is visible or active in each environment, without requiring a code deployment.
+- [Feature Request](/glossary/feature-request) — A suggestion from a user, customer, or stakeholder for new or improved product functionality.
+- [Filter](/glossary/filter) — Criteria applied to narrow the set of visible items in backlogs, the Everything page, timelines, or reports.
 - [Flag Configuration](/glossary/flag-configuration) — The settings controlling a feature flag's behavior in each environment.
 - [Flag Evaluation](/glossary/flag-evaluation) — The process by which the Atono SDK determines whether a feature flag is ON or OFF for a given user, customer, or location at runtime.
 - [Flag Owner](/glossary/flag-owner) — A permission level granting full control over a feature flag including configuration, naming, permissions management, removal from stories, and deletion.
@@ -103,6 +105,7 @@ A complete reference for every concept and feature in Atono — 177 entries.
 - [Import](/glossary/import) — The process of bringing existing work from Jira or Linear into Atono, including issues, teams, projects, and optionally users.
 - [In Progress (Page)](/glossary/in-progress-page) — A team page showing active work moving through workflow steps.
 - [In Progress (Workflow Category)](/glossary/in-progress-workflow-category) — A workflow category containing steps representing active work.
+- [Incident](/glossary/incident) — An unplanned interruption or significant reduction in the quality of a production service.
 - [Increment](/glossary/increment) — A completed, potentially shippable piece of product output delivered at the end of each sprint.
 - [Inline Comment](/glossary/inline-comment) — A comment anchored to a specific word, phrase, or passage within a story's user story text, acceptance criteria, or additional content.
 - [Invite](/glossary/invite) — The process of adding a new user to an Atono workspace by sending them an email invitation containing a join link.
@@ -130,7 +133,7 @@ A complete reference for every concept and feature in Atono — 177 entries.
 
 ## N
 
-- [Notification](/glossary/notification) — An email sent to users when specific events occur, such as being assigned work or @mentioned in a comment.
+- [Notification](/glossary/notification) — An email message sent to a user when a relevant event occurs in Atono.
 - [Notification Settings](/glossary/notification-settings) — User-configurable preferences controlling which Atono events generate email notifications.
 
 ## O
@@ -145,22 +148,26 @@ A complete reference for every concept and feature in Atono — 177 entries.
 - [Persona](/glossary/persona) — A named user type in a user story's 'As a [persona]...' statement.
 - [Planning Poker](/glossary/planning-poker) — A consensus-based estimation technique where team members simultaneously reveal effort estimates for a story using cards or a digital tool.
 - [Portfolio](/glossary/portfolio) — A collection of epics, product themes, or strategic initiatives representing a major investment area for the organization.
+- [Postmortem](/glossary/postmortem) — A structured retrospective analysis conducted after a production incident to understand what went wrong, why it happened, and how to prevent recurrence.
 - [Priority](/glossary/priority) — A relative ranking of work items indicating their order of importance or urgency.
 - [Private Team](/glossary/private-team) — A team with restricted visibility where only team members, Team Administrators, Backlog Owners, and Workspace Owners/Administrators can see the team's backlog and work items.
 - [Probability](/glossary/probability) — The likelihood that a user will encounter a bug, rated 1-5 (Impossible to Certain) during Bug Triage.
+- [Product Backlog](/glossary/product-backlog) — An ordered list of all work known to be needed in the product, maintained and prioritized by the product owner.
 - [Product Discovery](/glossary/product-discovery) — The process of identifying, validating, and scoping user problems before committing to building a solution.
 - [Product Goal](/glossary/product-goal) — A long-term, outcome-oriented objective that provides direction for the product team's work across multiple sprints or releases.
 - [Product Knowledge](/glossary/product-knowledge) — A feature that analyzes help documentation and builds a structured glossary of up to 200 key product concepts including name, description, synonyms, and relationships.
 - [Product Manager](/glossary/product-manager) — A workspace role controlling who can manage product themes.
+- [Product Owner](/glossary/product-owner) — The Scrum role responsible for maximizing the value of the product by managing, ordering, and communicating the contents of the product backlog.
 - [Product Theme](/glossary/product-theme) — A named grouping for related stories aligning work with strategic goals and tracking long-term progress.
 - [Projected Completion](/glossary/projected-completion) — An estimated date when a story or bug will be completed, calculated differently for Kanban and Scrum teams.
-- [Pull Request](/glossary/pull-request) — A proposed code change in Git-based version control systems, automatically linked to stories or bugs when mentioned by ID in the PR title, description, branch name, or optionally comments and commit messages.
+- [Pull Request](/glossary/pull-request) — A proposed code change in a Git-based version control system, automatically linked to Atono stories or bugs when the Atono item ID is mentioned in the PR title, description, or branch name.
 
 ## R
 
 - [Rate Limit](/glossary/rate-limit) — A cap on the number of API requests a single user or API key can make to Atono within a defined time window.
 - [Regression](/glossary/regression) — An unintended failure in previously working functionality caused by a new code change.
 - [Release](/glossary/release) — A key delivery milestone represented by a date, created as release markers on timelines.
+- [Release Notes](/glossary/release-notes) — A document summarizing the new features, improvements, and bug fixes included in a product release, typically published when a release goes live.
 - [Retrospective](/glossary/retrospective) — A recurring ceremony held at the end of each sprint where the Scrum team reflects on how they worked together and identifies specific improvements to carry into the next sprint.
 - [Risk](/glossary/risk) — A potential future event or condition that could negatively affect the delivery or quality of a story, sprint, or release.
 - [Risk Rating](/glossary/risk-rating) — A numerical assessment of a bug's overall risk, calculated by multiplying probability (1-5) by impact (1-5) to produce a value from 1-25, where 25 is highest risk.
@@ -174,15 +181,17 @@ A complete reference for every concept and feature in Atono — 177 entries.
 - [Saved View](/glossary/saved-view) — A named, personal collection of filters, sorting, and column customizations on the Everything page that can be returned to without reapplying settings.
 - [Scope](/glossary/scope) — The defined set of features, stories, or work committed to for a sprint, epic, release, or project.
 - [Scrum](/glossary/scrum) — A team workflow type focused on time-boxed iterations called sprints.
+- [Scrum Master](/glossary/scrum-master) — The Scrum team role responsible for facilitating Scrum ceremonies, coaching the team on Scrum practices, and removing impediments that block progress.
 - [SDK](/glossary/sdk) — Software Development Kit, a set of tools and libraries from Atono for integrating feature flags and usage tracking into applications.
-- [Search](/glossary/search) — A fuzzy, keyword-based search across story, bug, and epic titles, IDs, descriptions, user stories, acceptance criteria, and active comments.
+- [Search](/glossary/search) — A global fuzzy keyword search across all stories, bugs, and epics the user has permission to view.
 - [Severity](/glossary/severity) — The degree of impact a bug has on users or core system functionality, independent of how likely users are to encounter it.
 - [Shared View](/glossary/shared-view) — A saved view that has been shared with specific users or teams, appearing in their shared views list.
-- [Slack Integration](/glossary/slack-integration) — A workspace integration connecting Atono to a Slack workspace, enabling Slack channels for teams and stories, posting updates for team changes and feature flag modifications, and user-level Slack account connection.
+- [Slack Integration](/glossary/slack-integration) — A workspace integration connecting Atono to a Slack workspace, enabling automated updates and communication across both platforms.
 - [Slice](/glossary/slice) — A defined subset within an environment for a feature flag, based on customer and/or location attributes with specific operators (is, is not, contains, is one of, is in, is not in).
 - [Snooze](/glossary/snooze) — An action that temporarily hides the staleness indicator for a specific item in a specific workflow step for a chosen duration (1 day, 1 week, 1 month, or until changed).
 - [Split](/glossary/split) — An action dividing a story into two stories by moving selected acceptance criteria into a new story.
-- [Sprint](/glossary/sprint) — A time-boxed iteration for Scrum teams, typically 1-4 weeks, with defined start/end dates and committed scope.
+- [Sprint](/glossary/sprint) — A time-boxed iteration for Scrum teams, typically one to four weeks, with defined start and end dates and a committed set of stories working toward a sprint goal.
+- [Sprint Backlog](/glossary/sprint-backlog) — The set of product backlog items selected for a sprint, combined with the team's plan for delivering them toward the sprint goal.
 - [Sprint Calendar](/glossary/sprint-calendar) — A Scrum-only team page providing a visual schedule of past, active, and future sprints.
 - [Sprint Goal](/glossary/sprint-goal) — A concise objective that the Scrum team commits to achieving by the end of a sprint.
 - [Sprint Planning](/glossary/sprint-planning) — A Scrum ceremony at the start of each sprint where the team selects stories from the backlog and commits to a sprint goal.
@@ -191,7 +200,7 @@ A complete reference for every concept and feature in Atono — 177 entries.
 - [Stakeholder](/glossary/stakeholder) — A user with a critical team role (Team Administrator or Backlog Owner) who is not a team member.
 - [Staleness Indicator](/glossary/staleness-indicator) — A red hourglass icon appearing on stories or bugs in In Progress steps when time spent exceeds 3 standard deviations of the team's average for similar items in that step.
 - [Standard User](/glossary/standard-user) — The default workspace role assigned to all users, providing typical functionality including creating teams, managing public team backlogs (without backlog owners), creating/managing bugs and stories on public teams, and using most Atono features.
-- [Story](/glossary/story) — A unit of user-focused work including title, one or more user stories, hierarchical acceptance criteria, and optional additional content.
+- [Story](/glossary/story) — The core unit of user-focused work in Atono, capturing what needs to be built and why.
 - [Story Map](/glossary/story-map) — A two-dimensional visual arrangement of user stories organized by user journey across the horizontal axis and priority or detail level down the vertical axis.
 - [Story Points](/glossary/story-points) — A numerical measure derived from story size (XXS=1, XS=2, S=3, M=5, L=8, XL=13, XXL=21) using Fibonacci numbers.
 - [Story Refinement](/glossary/story-refinement) — A workspace-wide backlog for capturing ideas and preparing stories before assigning them to teams.
@@ -217,12 +226,13 @@ A complete reference for every concept and feature in Atono — 177 entries.
 ## U
 
 - [Usage Tracking](/glossary/usage-tracking) — Recording user interactions with features to power Feature Engagement graphs.
+- [User Feedback](/glossary/user-feedback) — Input gathered from users through interviews, surveys, support tickets, usage analytics, or direct observation that reveals how people interact with the product and what problems they experience.
 - [User Profile](/glossary/user-profile) — A page showing user details including email, name, workspace role, and team memberships.
-- [User Story](/glossary/user-story) — A brief description of a feature from the user's perspective in the format 'As a [persona], I want to [action] so that [benefit].' Stories can have multiple user story statements.
+- [User Story](/glossary/user-story) — A brief, structured description of a feature from an end user's perspective, written in the format: 'As a [persona], I want to [action] so that [benefit].' Each story or epic can contain one or more user stories.
 
 ## V
 
-- [Velocity](/glossary/velocity) — The average number of story points a Scrum team completes per sprint, calculated from completed sprints within the team's configured averaging window.
+- [Velocity](/glossary/velocity) — The average number of story points a Scrum team completes per sprint, calculated using only the team's most recent completed sprints within the configured velocity averaging window.
 - [Velocity Averaging Window](/glossary/velocity-averaging-window) — A team-level setting controlling how many recent completed sprints are used to calculate velocity.
 - [Velocity Chart](/glossary/velocity-chart) — A bar chart showing the number of story points a Scrum team completed in each past sprint, used to visualize trends in team throughput over time.
 - [Version History](/glossary/version-history) — A record of all changes to a story or bug's content (title, user stories, acceptance criteria, description) showing additions (green) and deletions (red strikethrough).
@@ -235,7 +245,7 @@ A complete reference for every concept and feature in Atono — 177 entries.
 - [WIP Limit](/glossary/wip-limit) — A maximum number of work items permitted to be simultaneously active in a single workflow step or across the entire In Progress category.
 - [Won't do (Workflow Category)](/glossary/wont-do-workflow-category) — A workflow category containing one step for work that will not be completed.
 - [Work Item](/glossary/work-item) — A generic term encompassing any story, bug, or epic in Atono.
-- [Workflow](/glossary/workflow) — A customizable sequence of 4-25 steps that stories and bugs move through from ready-to-start to completion.
+- [Workflow](/glossary/workflow) — A customizable sequence of 4–25 named steps that stories and bugs move through from ready-to-start to completion.
 - [Workflow Category](/glossary/workflow-category) — One of four organizational groupings for workflow steps: To do (1 step), In Progress (1+ steps, contributes to cycle time), Done (1+ steps), Won't do (1 step).
 - [Workflow Step](/glossary/workflow-step) — A named stage in a workflow with assigned color and category (To do, In progress, Done, Won't do).
 - [Workspace](/glossary/workspace) — The top-level container for all teams, stories, bugs, users, and other elements in Atono for a company.
