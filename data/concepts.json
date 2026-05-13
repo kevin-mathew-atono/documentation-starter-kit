@@ -30,31 +30,6 @@
     ]
   },
   {
-    "name": "Acceptance Rate",
-    "definition": "The percentage of stories or acceptance criteria that pass review on the first attempt without requiring rework or rejection. A high acceptance rate indicates that stories are well-defined before development begins and that implementation matches what was specified. Teams track acceptance rate as a quality indicator, often pairing it with cycle time to understand both speed and quality of delivery.",
-    "synonyms": [
-      "First-Pass Acceptance Rate"
-    ],
-    "related": [
-      "Acceptance Criteria",
-      "Cycle Time",
-      "Definition of Done",
-      "Story"
-    ]
-  },
-  {
-    "name": "Acceptance Test",
-    "definition": "A test that validates a story meets its acceptance criteria from the user's perspective. Acceptance tests are typically written alongside acceptance criteria and run before a story is marked as done. They may be manual or automated and are distinct from unit or integration tests, focusing on user-observable behavior rather than internal implementation.",
-    "synonyms": [
-      "User Acceptance Test"
-    ],
-    "related": [
-      "Acceptance Criteria",
-      "Definition of Done",
-      "Story"
-    ]
-  },
-  {
     "name": "Active Sprint",
     "definition": "The one sprint a Scrum team is currently executing toward a sprint goal. Only one sprint can be active per team at any given time. Active sprint items appear on the In Progress page, contribute to burndown charts, and count toward velocity calculations when the sprint is completed. Starting a new sprint without closing the previous one is not permitted.",
     "synonyms": [],
@@ -97,59 +72,6 @@
     ]
   },
   {
-    "name": "Affected Environment",
-    "definition": "One or more environments where a bug has been observed, selected from the workspace's configured environments such as development, staging, or production. Used to scope bug impact and prioritize fixes.",
-    "synonyms": [],
-    "related": [
-      "Bug",
-      "Bug Triage",
-      "Environment"
-    ]
-  },
-  {
-    "name": "AI Context",
-    "definition": "A structured section on a story or bug where AI tools store and retrieve context across work sessions, divided into Design Decisions, Technical Investigation, and Technical Changes. Created and updated through the Atono MCP Server or manually in the Atono web application. Each section has independent version history.",
-    "synonyms": [
-      "MCP Resources"
-    ],
-    "related": [
-      "Bug",
-      "Design Decisions",
-      "Story",
-      "Technical Changes",
-      "Technical Investigation",
-      "Version History"
-    ]
-  },
-  {
-    "name": "API Endpoint",
-    "definition": "A specific URL path in the Atono public API representing a resource or operation, such as listing stories, creating a bug, or fetching a workspace's environments. Each endpoint accepts defined HTTP methods (GET, POST, PATCH, DELETE) and requires authentication via an API key. Endpoint documentation is available in the Atono API reference.",
-    "synonyms": [],
-    "related": [
-      "API Key",
-      "Atono API"
-    ]
-  },
-  {
-    "name": "API Key",
-    "definition": "A user-specific credential for authenticating with the Atono public API, created and managed from the user's profile. Each key has a unique name for identification, tracks last usage, and can be deleted to revoke access. Actions taken with an API key appear as performed by that user account.",
-    "synonyms": [],
-    "related": [
-      "Atono API",
-      "User Profile"
-    ]
-  },
-  {
-    "name": "Archive",
-    "definition": "Moving inactive, completed, or outdated items out of active views without permanently deleting them. Archived items remain accessible through search or dedicated archive views but do not appear in standard backlogs, filters, or reports. Archiving keeps active workspaces focused on current work while preserving historical context.",
-    "synonyms": [],
-    "related": [
-      "Everything (Page)",
-      "Search",
-      "Workspace"
-    ]
-  },
-  {
     "name": "Ask Capy",
     "definition": "An AI-powered Q&amp;A tool that searches completed stories and bugs in your workspace to answer product questions. Requires at least 10 completed items to activate. Each workspace gets 50 questions per day; the counter resets at midnight Eastern time. Every answer includes the source items it was drawn from.",
     "synonyms": [
@@ -169,17 +91,6 @@
     "related": [
       "Bug",
       "Notification",
-      "Story"
-    ]
-  },
-  {
-    "name": "Assumption",
-    "definition": "A stated belief held as true for planning or scoping purposes, pending full validation. Assumptions reduce uncertainty enough to make decisions but should be tracked and revisited as work progresses. If an assumption proves false, it may become a risk or require a change request. Assumptions are often documented in story descriptions or design decisions sections.",
-    "synonyms": [],
-    "related": [
-      "Change Request",
-      "Design Decisions",
-      "Risk",
       "Story"
     ]
   },
@@ -276,29 +187,6 @@
     ]
   },
   {
-    "name": "Backlog Owner",
-    "definition": "A team role responsible for managing a team's planned work when Backlog Management is enabled. Can add, create, reorder, delete stories, and for Scrum teams, manage sprint planning. Does not need to be a team member. A team can have up to 10 backlog owners.",
-    "synonyms": [],
-    "related": [
-      "Backlog Management",
-      "Scrum",
-      "Sprint",
-      "Story",
-      "Team",
-      "Team Role"
-    ]
-  },
-  {
-    "name": "Baseline",
-    "definition": "A fixed reference snapshot of a project's original scope, estimates, or schedule used as a comparison point to measure change over time. Baselines help teams understand how much scope has grown (scope creep), whether cycle times are improving, and how well initial estimates held up. In planning discussions, 'baseline' often refers to the original sprint commitment before any additions or removals.",
-    "synonyms": [],
-    "related": [
-      "Scope",
-      "Sprint",
-      "Velocity"
-    ]
-  },
-  {
     "name": "Blocker",
     "definition": "An impediment preventing a story or bug from progressing through the workflow. Blockers can be internal (a missing decision, an unresolved dependency) or external (a third-party outage, waiting on another team). Identified in daily standups, blockers should be escalated and resolved by the team or Scrum Master as quickly as possible to minimize cycle time impact.",
     "synonyms": [
@@ -327,7 +215,7 @@
   },
   {
     "name": "Bug",
-    "definition": "An error, flaw, or unintended behavior in software requiring investigation and resolution. Each bug includes a title, structured description (summary, reproduction steps, expected behavior, actual behavior), risk rating calculated from probability × impact (1–25 scale), affected environments, and an optional assignee. Bugs move through team workflows, participate in Bug Triage before team assignment, and support cycle time tracking, duplication, version history, threaded comments, linked items, subtasks, and attachments.",
+    "definition": "An error, flaw, or unintended behavior in software requiring investigation and resolution. Each bug includes a title, structured description (summary, reproduction steps, expected behavior, actual behavior), risk rating calculated from probability \u00d7 impact (1\u201325 scale), affected environments, and an optional assignee. Bugs move through team workflows, participate in Bug Triage before team assignment, and support cycle time tracking, duplication, version history, threaded comments, linked items, subtasks, and attachments.",
     "synonyms": [],
     "related": [
       "Bug Triage",
@@ -346,7 +234,7 @@
   },
   {
     "name": "Bug Triage",
-    "definition": "A workspace-wide page and process for evaluating newly reported bugs before they are assigned to a team. Bugs remain in triage until they receive a team assignment and a risk rating (calculated as probability × impact). The triage page is organized into Reported Bugs, More Info Required, and Won't Do sections. A badge indicates when bugs have been in triage for more than seven days without action.",
+    "definition": "A workspace-wide page and process for evaluating newly reported bugs before they are assigned to a team. Bugs remain in triage until they receive a team assignment and a risk rating (calculated as probability \u00d7 impact). The triage page is organized into Reported Bugs, More Info Required, and Won't Do sections. A badge indicates when bugs have been in triage for more than seven days without action.",
     "synonyms": [
       "Triage"
     ],
@@ -387,17 +275,6 @@
     ]
   },
   {
-    "name": "Burnup Chart",
-    "definition": "A chart showing two lines over time: total work scope and total work completed. Unlike a burndown chart, which shows remaining work, a burnup chart makes scope changes visible as upward movement in the scope line. Burnup charts are useful when scope is expected to change during a sprint or release, as they clearly distinguish between work added and work completed.",
-    "synonyms": [],
-    "related": [
-      "Burndown Chart",
-      "Scrum",
-      "Sprint",
-      "Story Points"
-    ]
-  },
-  {
     "name": "Capacity",
     "definition": "The total available work effort a team has in a sprint or time period, typically expressed in story points or hours. Capacity accounts for team size, individual availability, holidays, and planned non-project time. Comparing planned sprint scope against capacity helps teams avoid overcommitting during sprint planning.",
     "synonyms": [
@@ -412,32 +289,6 @@
     ]
   },
   {
-    "name": "Change Request",
-    "definition": "A formal or informal proposal to modify agreed-upon scope, requirements, or acceptance criteria after work has begun. Change requests can originate from stakeholders, product managers, or the team itself. Accepting a change request mid-sprint typically affects the sprint goal and may require removing other items to maintain realistic scope.",
-    "synonyms": [
-      "CR"
-    ],
-    "related": [
-      "Acceptance Criteria",
-      "Scope",
-      "Sprint Goal",
-      "Stakeholder"
-    ]
-  },
-  {
-    "name": "Collaborator",
-    "definition": "A user who contributes to the work on a story or bug without being the primary assignee. Collaborators may comment, update acceptance criteria, add attachments, or move the item through workflow steps. In Atono, any team member with access to a team's stories can act as a collaborator. The assignee field tracks primary ownership while collaboration is open to all team members.",
-    "synonyms": [
-      "Contributor"
-    ],
-    "related": [
-      "Assignee",
-      "Comment",
-      "Story",
-      "Team Member"
-    ]
-  },
-  {
     "name": "Comment",
     "definition": "A discussion thread on a story or bug, either on the item as a whole or anchored to specific highlighted text or an acceptance criterion. Supports @mentions (which trigger notifications), inline item ID references, and per-comment actions including accept, reject, edit, and delete. Open comments appear in a side panel; resolved comments are archived in Activities.",
     "synonyms": [],
@@ -448,31 +299,6 @@
       "Linked Items",
       "Notification",
       "Story"
-    ]
-  },
-  {
-    "name": "Continuous Integration",
-    "definition": "A software development practice where team members merge code changes into a shared branch frequently, triggering automated builds and tests on each merge. Continuous integration surfaces integration errors quickly and reduces the risk of large, difficult merges. In Atono, pull requests linked to stories provide visibility into CI status as part of the development workflow.",
-    "synonyms": [
-      "CI"
-    ],
-    "related": [
-      "GitHub Integration",
-      "Pull Request",
-      "Story"
-    ]
-  },
-  {
-    "name": "Cumulative Flow Diagram",
-    "definition": "A stacked area chart showing the count of work items in each workflow state over time. The width of each band represents the number of items in that state; a widening band indicates accumulating work-in-progress. The horizontal distance between the entry and exit of a band approximates cycle time. Cumulative flow diagrams help teams identify bottlenecks and monitor flow stability.",
-    "synonyms": [
-      "CFD"
-    ],
-    "related": [
-      "Cycle Time",
-      "Kanban",
-      "Throughput",
-      "Workflow Category"
     ]
   },
   {
@@ -504,18 +330,6 @@
     ]
   },
   {
-    "name": "Cycle Time Report",
-    "definition": "A team-specific report visualizing average cycle times for stories and bugs over a selected timeframe (1-60 months). Resolution adjusts automatically (daily, weekly, monthly, quarterly). Can be filtered by story size. Shows which data is used in cycle time calculations based on team configuration. Uses team time zone for date grouping.",
-    "synonyms": [],
-    "related": [
-      "Bug",
-      "Cycle Time",
-      "Story",
-      "Story Size",
-      "Team"
-    ]
-  },
-  {
     "name": "Daily Standup",
     "definition": "A short, time-boxed synchronization meeting held each working day where team members share what they completed yesterday, what they plan to do today, and any blockers preventing progress. Also called a daily scrum in the Scrum framework. The standup is designed to improve team coordination and surface impediments early, not to provide status reports to management.",
     "synonyms": [
@@ -527,18 +341,6 @@
       "Scrum",
       "Sprint",
       "Team"
-    ]
-  },
-  {
-    "name": "Data Export",
-    "definition": "The process of downloading workspace data in a portable format for external analysis, archiving, or migration. Data exports may include stories, bugs, epics, comments, and workflow history. Exports are typically available in CSV or JSON format and are accessible to Workspace Owners and Administrators from workspace settings.",
-    "synonyms": [
-      "Export"
-    ],
-    "related": [
-      "Administrator",
-      "Workspace",
-      "Workspace Owner"
     ]
   },
   {
@@ -583,32 +385,6 @@
     ]
   },
   {
-    "name": "Deployment Pipeline",
-    "definition": "An automated sequence of steps—such as build, test, and release—that code changes move through from commit to production. Deployment pipelines enforce quality gates and reduce the risk of releasing broken code. Feature flags in Atono complement deployment pipelines by enabling code to be deployed while keeping features disabled until they are ready for users.",
-    "synonyms": [
-      "CI/CD Pipeline",
-      "Release Pipeline"
-    ],
-    "related": [
-      "Environment",
-      "Feature Flag",
-      "GitHub Integration",
-      "Pull Request"
-    ]
-  },
-  {
-    "name": "Design Decisions",
-    "definition": "An AI Context section capturing product and scope decisions made during story authoring, including tradeoffs, AC framing, scope boundaries, and deferred items. Updated when acceptance criteria changes reflect meaningful scope shifts. Reflects current product intent, not a running log.",
-    "synonyms": [
-      "DESIGN"
-    ],
-    "related": [
-      "Acceptance Criteria",
-      "AI Context",
-      "Story"
-    ]
-  },
-  {
     "name": "Done (Workflow Category)",
     "definition": "A workflow category containing steps representing completed work. Items in Done steps do not contribute to cycle time. Each workflow must have at least one Done step. In the default workflow, the Done step is in this category.",
     "synonyms": [],
@@ -640,39 +416,6 @@
     ]
   },
   {
-    "name": "Engagement (Page)",
-    "definition": "A workspace page showing a Top Features graph that ranks up to 10 features by usage across the product. Filterable by product theme, team, environment, completed date, customer, or location. Remembers user preferences for timeframe and filters.",
-    "synonyms": [
-      "Top Features"
-    ],
-    "related": [
-      "Feature Engagement",
-      "Story",
-      "Usage Tracking"
-    ]
-  },
-  {
-    "name": "Environment",
-    "definition": "A named stage in the software development lifecycle such as dev, test, stage, or prod, used to manage feature flags and track bugs. Each environment has a unique key for SDK integration. Workspaces include four default environments that can be renamed, reordered, or deleted. New environments can be created by Workspace Owners and Administrators.",
-    "synonyms": [],
-    "related": [
-      "Bug",
-      "Environment Key",
-      "Feature Flag",
-      "Slice"
-    ]
-  },
-  {
-    "name": "Environment Key",
-    "definition": "A unique identifier for an environment, used to connect application code to Atono for feature flag evaluation and usage tracking. Displayed on the Environments page and copyable for use in the SDK.",
-    "synonyms": [],
-    "related": [
-      "Environment",
-      "Feature Flag",
-      "SDK"
-    ]
-  },
-  {
     "name": "Epic",
     "definition": "A planning item that groups related stories under a single shared goal, providing a high-level view of progress across multiple pieces of work. Epics include a title, one or more user stories defining intended outcomes, and a description. Stories can belong to only one epic at a time. When a story is split, both resulting stories remain in the original epic unless a new epic is created during the split. Epics appear in search results, the Everything page, and timelines.",
     "synonyms": [],
@@ -685,20 +428,8 @@
     ]
   },
   {
-    "name": "Estimated Completion Date",
-    "definition": "A forecast for when items in a Kanban team's To do category will be completed, based on the team's average cycle time and the current backlog queue order. Updates dynamically as items are reordered. Highlighted in orange when falling after an item's timebox end date. Not available for Scrum teams or outliers.",
-    "synonyms": [],
-    "related": [
-      "Cycle Time",
-      "Kanban",
-      "Outlier",
-      "Timebox",
-      "To do (Workflow Category)"
-    ]
-  },
-  {
     "name": "Estimation",
-    "definition": "The process of predicting the relative effort required to complete a story or bug, typically expressed in story points using a Fibonacci scale. Estimation is performed collaboratively by the development team — often using planning poker — to surface differing assumptions and reach a shared understanding. Estimates feed into sprint planning, velocity calculations, and projected completion dates. In Atono, estimation is captured as the story size field (XXS through XXL), which maps to story points used in burndown charts and total story point counts.",
+    "definition": "The process of predicting the relative effort required to complete a story or bug, typically expressed in story points using a Fibonacci scale. Estimation is performed collaboratively by the development team \u2014 often using planning poker \u2014 to surface differing assumptions and reach a shared understanding. Estimates feed into sprint planning, velocity calculations, and projected completion dates. In Atono, estimation is captured as the story size field (XXS through XXL), which maps to story points used in burndown charts and total story point counts.",
     "synonyms": [
       "Story Estimation",
       "Sizing"
@@ -714,35 +445,8 @@
     ]
   },
   {
-    "name": "Everything (Page)",
-    "definition": "A centralized, filterable view of all stories, bugs, and epics in the workspace that the user has permission to view. Supports multi-criteria filtering, sorting, saved/shared views, column customization, and bulk actions (add to timebox/product theme). Title shows visible/total item counts. Private team items are excluded or redacted based on permissions.",
-    "synonyms": [],
-    "related": [
-      "Bug",
-      "Epic",
-      "Filter",
-      "Product Theme",
-      "Saved View",
-      "Shared View",
-      "Story",
-      "Timebox"
-    ]
-  },
-  {
-    "name": "Feature Engagement",
-    "definition": "A story-level usage graph showing how often a feature is used, filterable by environment, customer, or location. Displays top 10 customers by default or compares usage across environments. Supports bar charts (totals) and line graphs (trends). Requires SDK-based usage tracking or mapped clicks via Chrome extension. Graph position moves to top of story when in Done category.",
-    "synonyms": [],
-    "related": [
-      "Atono Chrome Extension",
-      "Environment",
-      "SDK",
-      "Story",
-      "Usage Tracking"
-    ]
-  },
-  {
     "name": "Feature Flag",
-    "definition": "A named toggle controlling whether a feature is visible or active in each environment, without requiring a code deployment. Flags are created as standalone items or applied to stories. Each flag has a unique name (4–30 characters, lowercase letters and underscores), a description, an optional flag owner, and per-environment configurations that can target specific customers or locations via slices. The Atono SDK evaluates flags in real time and records the last evaluation timestamp and usage data.",
+    "definition": "A named toggle controlling whether a feature is visible or active in each environment, without requiring a code deployment. Flags are created as standalone items or applied to stories. Each flag has a unique name (4\u201330 characters, lowercase letters and underscores), a description, an optional flag owner, and per-environment configurations that can target specific customers or locations via slices. The Atono SDK evaluates flags in real time and records the last evaluation timestamp and usage data.",
     "synonyms": [
       "Feature Toggle"
     ],
@@ -784,59 +488,6 @@
     ]
   },
   {
-    "name": "Flag Configuration",
-    "definition": "The settings controlling a feature flag's behavior in each environment. Includes ON/OFF state and optional slices defining conditions based on customer or location attributes. Configuration changes are versioned and appear in Activities. Slices are evaluated top-to-bottom with first-match logic.",
-    "synonyms": [],
-    "related": [
-      "Activities",
-      "Environment",
-      "Feature Flag",
-      "Slice"
-    ]
-  },
-  {
-    "name": "Flag Evaluation",
-    "definition": "The process by which the Atono SDK determines whether a feature flag is ON or OFF for a given user, customer, or location at runtime. During evaluation, the SDK checks the flag's per-environment configuration and applies any defined slices to return a boolean result. The timestamp of the most recent evaluation is recorded and visible in the flag's status panel.",
-    "synonyms": [
-      "Feature Flag Evaluation"
-    ],
-    "related": [
-      "Environment",
-      "Feature Flag",
-      "SDK",
-      "Slice"
-    ]
-  },
-  {
-    "name": "Flag Owner",
-    "definition": "A permission level granting full control over a feature flag including configuration, naming, permissions management, removal from stories, and deletion. Automatically assigned to the flag creator. Cannot be the sole owner removed from a flag.",
-    "synonyms": [],
-    "related": [
-      "Feature Flag",
-      "Flag Permissions"
-    ]
-  },
-  {
-    "name": "Flag Permissions",
-    "definition": "Access controls for feature flags, separate from workspace and team roles. Flag User can modify configuration and toggle flags. Flag Owner has User permissions plus ability to edit name/description, manage permissions, remove from stories, and delete flags. Creator is automatically assigned Owner. Teams are auto-assigned User permissions when a flagged story is added to their backlog if no team currently has permissions.",
-    "synonyms": [],
-    "related": [
-      "Feature Flag",
-      "Flag Owner",
-      "Flag User",
-      "Roles and Permissions"
-    ]
-  },
-  {
-    "name": "Flag Status",
-    "definition": "A summary of a feature flag's current configuration and evaluation state across all stories and environments. Possible statuses: Not Yet Evaluated, Currently Off, Mixed Configuration, Currently On, No Recent Evaluations (>30 days). Used to determine if a flag can be safely deleted.",
-    "synonyms": [],
-    "related": [
-      "Environment",
-      "Feature Flag"
-    ]
-  },
-  {
     "name": "Flag Targeting",
     "definition": "Rules within a flag's per-environment configuration that determine which customers or locations see the flag as enabled. Targeting uses slice definitions with operators (is, is not, contains, is one of, is in, is not in) to evaluate customer identifiers and location data. When no targeting rules match, the flag falls back to the environment's default ON/OFF state.",
     "synonyms": [
@@ -849,37 +500,6 @@
       "Flag Configuration",
       "Location",
       "Slice"
-    ]
-  },
-  {
-    "name": "Flag User",
-    "definition": "A permission level allowing configuration and toggling of feature flags on/off and defining slices, but not editing flag name/description, managing permissions, removing from stories, or deleting. Cannot be the last User removed from a flag.",
-    "synonyms": [],
-    "related": [
-      "Feature Flag",
-      "Flag Permissions"
-    ]
-  },
-  {
-    "name": "Flow Efficiency",
-    "definition": "The ratio of active work time to total lead time for a work item, expressed as a percentage. Flow efficiency reveals how much of an item's lifespan is spent in active development versus waiting (in queue, blocked, or idle). High flow efficiency indicates minimal waste; low flow efficiency points to queuing or blocking problems. A team average above 15% is considered good in most software contexts.",
-    "synonyms": [],
-    "related": [
-      "Blocker",
-      "Cycle Time",
-      "Lead Time",
-      "Throughput"
-    ]
-  },
-  {
-    "name": "Follow",
-    "definition": "An action marking a story or bug (via star icon) so it appears in filtered views and dashboard widgets. Following is user-specific and doesn't affect the item or other users.",
-    "synonyms": [],
-    "related": [
-      "Bug",
-      "Everything (Page)",
-      "Home (Page)",
-      "Story"
     ]
   },
   {
@@ -902,17 +522,6 @@
       "Saved View",
       "Shared View",
       "Widget"
-    ]
-  },
-  {
-    "name": "Identity Provider",
-    "definition": "An external system managing user identities and authentication for an organization, used with SSO. When SSO is enabled, Atono delegates authentication to the identity provider and confirms email addresses through it.",
-    "synonyms": [
-      "IdP"
-    ],
-    "related": [
-      "SAML",
-      "SSO"
     ]
   },
   {
@@ -978,58 +587,6 @@
     ]
   },
   {
-    "name": "Increment",
-    "definition": "A completed, potentially shippable piece of product output delivered at the end of each sprint. The increment includes all work completed in the current sprint plus all previous increments, representing the current state of the product. In Scrum, every sprint must produce an increment, even if it is not released to customers immediately.",
-    "synonyms": [
-      "Sprint Increment"
-    ],
-    "related": [
-      "Done (Workflow Category)",
-      "Scrum",
-      "Sprint",
-      "Sprint Review"
-    ]
-  },
-  {
-    "name": "Inline Comment",
-    "definition": "A comment anchored to a specific word, phrase, or passage within a story's user story text, acceptance criteria, or additional content. Inline comments surface in context alongside the highlighted text, making it easy to discuss specific details without losing their location. Resolved inline comments are archived in Activities.",
-    "synonyms": [
-      "Anchored Comment"
-    ],
-    "related": [
-      "Acceptance Criteria",
-      "Activities",
-      "Comment",
-      "Story"
-    ]
-  },
-  {
-    "name": "Invite",
-    "definition": "The process of adding a new user to an Atono workspace by sending them an email invitation containing a join link. Invitations are sent by Workspace Owners or Administrators. The invited user must accept the invitation and create or sign in to an Atono account. Once accepted, the user is added to the workspace with the Standard User role by default.",
-    "synonyms": [
-      "User Invitation",
-      "Workspace Invite"
-    ],
-    "related": [
-      "Administrator",
-      "Standard User",
-      "Workspace",
-      "Workspace Owner"
-    ]
-  },
-  {
-    "name": "Item ID",
-    "definition": "A unique identifier assigned to each story, bug, or epic in the format TYPE-NUMBER (e.g., STORY-123, BUG-456, EPIC-789). Assigned sequentially; numbers are not reused unless the deleted item was the next available ID. Used for linking, searching, and referencing items.",
-    "synonyms": [
-      "Handle"
-    ],
-    "related": [
-      "Bug",
-      "Epic",
-      "Story"
-    ]
-  },
-  {
     "name": "Iteration",
     "definition": "A fixed-length time-boxed development cycle used to deliver a defined set of work. In Scrum, iterations are called sprints. In other agile frameworks, iteration length and structure vary. The term is often used interchangeably with sprint in Atono contexts.",
     "synonyms": [
@@ -1063,17 +620,6 @@
     "related": [
       "OKR",
       "Product Goal"
-    ]
-  },
-  {
-    "name": "Keyboard Shortcut",
-    "definition": "A key or combination of keys that triggers a specific action in Atono without using the mouse. Keyboard shortcuts speed up common operations like opening search, creating a new story, navigating between pages, and submitting forms. A full list of shortcuts is available from the help menu within the application.",
-    "synonyms": [
-      "Hotkey",
-      "Key Binding"
-    ],
-    "related": [
-      "Search"
     ]
   },
   {
@@ -1125,18 +671,6 @@
     ]
   },
   {
-    "name": "Location",
-    "definition": "A geographic attribute derived from a user's IP address at the time of a feature flag evaluation or usage tracking event. Used as a slice condition in feature flag configurations to enable or disable features for users in specific regions. Atono automatically detects location without requiring explicit values from the SDK caller.",
-    "synonyms": [],
-    "related": [
-      "Feature Flag",
-      "Flag Configuration",
-      "SDK",
-      "Slice",
-      "Usage Tracking"
-    ]
-  },
-  {
     "name": "Mention",
     "definition": "Tagging a specific user in a comment or description by typing @ followed by their name or email. A mention sends the tagged user a notification and creates a link to their profile. Mentions are supported in story and bug comments and in the description fields. Mentioned users are notified by email.",
     "synonyms": [
@@ -1172,32 +706,6 @@
     ]
   },
   {
-    "name": "Notification Settings",
-    "definition": "User-configurable preferences controlling which Atono events generate email notifications. Users can enable or disable notifications for events such as being assigned work, receiving an @mention, or having a comment accepted or rejected. Notification settings are managed from the user's account settings page.",
-    "synonyms": [
-      "Email Preferences"
-    ],
-    "related": [
-      "Assignee",
-      "Mention",
-      "Notification",
-      "User Profile"
-    ]
-  },
-  {
-    "name": "OAuth",
-    "definition": "An open authorization standard that allows third-party applications to access Atono resources on behalf of a user without requiring the user to share their credentials. OAuth is used by external integrations and tools that need delegated access to workspace data. Atono supports OAuth for specific integration scenarios where API key authentication is not sufficient.",
-    "synonyms": [
-      "OAuth 2.0"
-    ],
-    "related": [
-      "API Key",
-      "Atono API",
-      "Identity Provider",
-      "SSO"
-    ]
-  },
-  {
     "name": "OKR",
     "definition": "Objectives and Key Results, a goal-setting framework linking qualitative objectives (what to achieve) to measurable key results (how success is measured). OKRs are typically set at quarterly or annual cadences at the company, team, and individual level. Teams use OKRs to align agile delivery work with strategic outcomes, often mapping epics or product themes to specific key results.",
     "synonyms": [
@@ -1207,79 +715,6 @@
       "Key Result",
       "Product Goal",
       "Product Theme"
-    ]
-  },
-  {
-    "name": "Outlier",
-    "definition": "A story or bug with unusually long cycle time, marked to exclude it from average cycle time calculations, cycle time reports, staleness indicators, and estimated completion dates. Outlier status can be added or removed by Workspace Owners, Administrators, Backlog Owners, and Team Administrators. Preserves the item's data for reference.",
-    "synonyms": [],
-    "related": [
-      "Cycle Time",
-      "Estimated Completion Date",
-      "Staleness Indicator"
-    ]
-  },
-  {
-    "name": "Parking Lot",
-    "definition": "A temporary holding area for ideas, topics, or work items that are raised during a meeting or planning session but are not immediately actionable or in scope. Items in the parking lot are noted for future consideration rather than ignored. In Atono, the parking lot concept is often implemented using the Won't do workflow category or Story Refinement for ideas not yet ready to be committed.",
-    "synonyms": [
-      "Idea Backlog"
-    ],
-    "related": [
-      "Story Refinement",
-      "Won't do (Workflow Category)"
-    ]
-  },
-  {
-    "name": "Persona",
-    "definition": "A named user type in a user story's 'As a [persona]...' statement. Atono suggests previously-used personas during story creation. Available personas include those from stories in To do/In progress and from stories in Done within the last 90 days. Retrieved via MCP tools for AI assistants.",
-    "synonyms": [],
-    "related": [
-      "Story",
-      "User Story"
-    ]
-  },
-  {
-    "name": "Planning Poker",
-    "definition": "A consensus-based estimation technique where team members simultaneously reveal effort estimates for a story using cards or a digital tool. Differences in estimates prompt discussion, surfacing assumptions and risks that might otherwise go unnoticed. After discussion, the team re-estimates until they reach agreement. Planning poker encourages collaborative sizing rather than anchoring to a single person's estimate.",
-    "synonyms": [
-      "Scrum Poker"
-    ],
-    "related": [
-      "Capacity",
-      "Scrum",
-      "Sprint Planning",
-      "Story Points",
-      "Story Size"
-    ]
-  },
-  {
-    "name": "Portfolio",
-    "definition": "A collection of epics, product themes, or strategic initiatives representing a major investment area for the organization. Portfolio management involves prioritizing and sequencing these larger units of work to allocate team capacity toward the highest-value opportunities. In Atono, portfolios are approximated through product themes and timeline views spanning multiple teams.",
-    "synonyms": [
-      "Product Portfolio"
-    ],
-    "related": [
-      "Epic",
-      "Product Theme",
-      "Roadmap",
-      "Timeline"
-    ]
-  },
-  {
-    "name": "Postmortem",
-    "definition": "A structured retrospective analysis conducted after a production incident to understand what went wrong, why it happened, and how to prevent recurrence. Blameless postmortems focus on systemic causes rather than individual mistakes and produce concrete action items such as new tests, monitoring improvements, or process changes. In Atono, postmortem action items are typically captured as bugs or technical investigation stories linked to the original incident bug.",
-    "synonyms": [
-      "Post-Incident Review",
-      "Blameless Postmortem",
-      "Root Cause Analysis"
-    ],
-    "related": [
-      "Bug",
-      "Incident",
-      "Linked Items",
-      "Retrospective",
-      "Technical Investigation"
     ]
   },
   {
@@ -1294,31 +729,8 @@
     ]
   },
   {
-    "name": "Private Team",
-    "definition": "A team with restricted visibility where only team members, Team Administrators, Backlog Owners, and Workspace Owners/Administrators can see the team's backlog and work items. Non-members see the team name but not its contents. Team members of a private team can manage membership. Contrast with public teams, which any workspace user can access.",
-    "synonyms": [],
-    "related": [
-      "Backlog Owner",
-      "Team",
-      "Team Administrator",
-      "Team Member",
-      "Workspace Owner"
-    ]
-  },
-  {
-    "name": "Probability",
-    "definition": "The likelihood that a user will encounter a bug, rated 1-5 (Impossible to Certain) during Bug Triage. Multiplied by impact to calculate the bug's risk rating (1-25 scale). Can be manually set or suggested by Atono.",
-    "synonyms": [],
-    "related": [
-      "Bug",
-      "Bug Triage",
-      "Impact",
-      "Risk Rating"
-    ]
-  },
-  {
     "name": "Product Backlog",
-    "definition": "An ordered list of all work known to be needed in the product, maintained and prioritized by the product owner. The product backlog is never complete — it evolves as the product and its context change. Higher-priority items are more refined and ready to work on; lower-priority items may be rough ideas. In Atono, the product backlog is managed through a combination of the team Backlog page and Story Refinement, where ideas are captured and prepared before being committed to a team.",
+    "definition": "An ordered list of all work known to be needed in the product, maintained and prioritized by the product owner. The product backlog is never complete \u2014 it evolves as the product and its context change. Higher-priority items are more refined and ready to work on; lower-priority items may be rough ideas. In Atono, the product backlog is managed through a combination of the team Backlog page and Story Refinement, where ideas are captured and prepared before being committed to a team.",
     "synonyms": [
       "Backlog"
     ],
@@ -1329,21 +741,6 @@
       "Scrum",
       "Sprint Backlog",
       "Story Refinement"
-    ]
-  },
-  {
-    "name": "Product Discovery",
-    "definition": "The process of identifying, validating, and scoping user problems before committing to building a solution. Discovery activities include user interviews, prototype testing, data analysis, and competitive research. Discovery outputs—such as validated problem statements, personas, and feature hypotheses—feed directly into story authoring, acceptance criteria, and product themes in Atono.",
-    "synonyms": [
-      "Discovery",
-      "User Research"
-    ],
-    "related": [
-      "Acceptance Criteria",
-      "Persona",
-      "Product Theme",
-      "Story",
-      "User Story"
     ]
   },
   {
@@ -1358,27 +755,6 @@
       "OKR",
       "Product Theme",
       "Scrum"
-    ]
-  },
-  {
-    "name": "Product Knowledge",
-    "definition": "A feature that analyzes help documentation and builds a structured glossary of up to 200 key product concepts including name, description, synonyms, and relationships. Exported as TSV for use with AI tools. Managed by Glossary Contributors and Owners with permissions, version history, and conflict detection.",
-    "synonyms": [],
-    "related": [
-      "Concept",
-      "Glossary",
-      "Glossary Contributor",
-      "Glossary Owner"
-    ]
-  },
-  {
-    "name": "Product Manager",
-    "definition": "A workspace role controlling who can manage product themes. When assigned in a workspace, Product Managers can add/remove themes, manage backlog owners for any team, access all public and private team backlogs, and manage glossary concepts. If no Product Managers are assigned, any user can manage product themes.",
-    "synonyms": [],
-    "related": [
-      "Glossary Owner",
-      "Product Theme",
-      "Workspace Role"
     ]
   },
   {
@@ -1397,30 +773,6 @@
     ]
   },
   {
-    "name": "Product Theme",
-    "definition": "A named grouping for related stories aligning work with strategic goals and tracking long-term progress. Created and managed by Product Managers if that role is assigned; otherwise by anyone. Stories can belong to only one theme. Themes appear on backlogs, timelines, and in filters.",
-    "synonyms": [],
-    "related": [
-      "Filter",
-      "Product Manager",
-      "Story",
-      "Timeline"
-    ]
-  },
-  {
-    "name": "Projected Completion",
-    "definition": "An estimated date when a story or bug will be completed, calculated differently for Kanban and Scrum teams. For Kanban teams in To do or In progress, based on current position, team cycle time, and daily throughput. For Scrum teams, reflects sprint timing (unscheduled or sprint end date). Warnings appear when projected date falls after timebox end date.",
-    "synonyms": [],
-    "related": [
-      "Cycle Time",
-      "Estimated Completion Date",
-      "Kanban",
-      "Scrum",
-      "Sprint",
-      "Timebox"
-    ]
-  },
-  {
     "name": "Pull Request",
     "definition": "A proposed code change in a Git-based version control system, automatically linked to Atono stories or bugs when the Atono item ID is mentioned in the PR title, description, or branch name. With the GitHub integration, PR mentions in comments and commit messages can also be configured to auto-link. Linked pull requests appear in the story or bug's Activities and in the Linked Items section, showing status (open, merged, closed) and a direct link to the PR.",
     "synonyms": [
@@ -1431,30 +783,6 @@
       "GitHub Integration",
       "Linked Items",
       "Story"
-    ]
-  },
-  {
-    "name": "Rate Limit",
-    "definition": "A cap on the number of API requests a single user or API key can make to Atono within a defined time window. Rate limiting protects platform stability and ensures fair resource distribution across all workspace users. Requests exceeding the limit receive an HTTP 429 Too Many Requests response and should be retried with exponential backoff.",
-    "synonyms": [
-      "API Rate Limit",
-      "Request Throttle"
-    ],
-    "related": [
-      "API Key",
-      "Atono API"
-    ]
-  },
-  {
-    "name": "Regression",
-    "definition": "An unintended failure in previously working functionality caused by a new code change. Regressions are a common source of bugs and are particularly risky after large refactors or releases touching shared code. Automated regression test suites and thorough acceptance criteria help teams catch regressions before they reach production.",
-    "synonyms": [
-      "Regression Bug"
-    ],
-    "related": [
-      "Acceptance Criteria",
-      "Bug",
-      "Bug Triage"
     ]
   },
   {
@@ -1469,20 +797,6 @@
       "Kanban",
       "Scrum",
       "Timeline"
-    ]
-  },
-  {
-    "name": "Release Notes",
-    "definition": "A document summarizing the new features, improvements, and bug fixes included in a product release, typically published when a release goes live. Release notes help users and stakeholders understand what has changed and why, reducing support burden and setting expectations. In Atono, the content for release notes is often sourced from completed stories and bugs linked to a specific release or timebox, using the release description and story acceptance criteria as the source of truth.",
-    "synonyms": [
-      "Changelog Entry",
-      "What's New"
-    ],
-    "related": [
-      "Bug",
-      "Release",
-      "Story",
-      "Timebox"
     ]
   },
   {
@@ -1501,7 +815,7 @@
   },
   {
     "name": "Risk",
-    "definition": "A potential future event or condition that could negatively affect the delivery or quality of a story, sprint, or release. Risks differ from issues in that they have not yet occurred. Teams commonly identify and track risks during sprint planning or retrospectives. In Atono, bug risk is quantified as a risk rating (probability × impact), but broader project risks are typically discussed in team meetings or tracked in story descriptions.",
+    "definition": "A potential future event or condition that could negatively affect the delivery or quality of a story, sprint, or release. Risks differ from issues in that they have not yet occurred. Teams commonly identify and track risks during sprint planning or retrospectives. In Atono, bug risk is quantified as a risk rating (probability \u00d7 impact), but broader project risks are typically discussed in team meetings or tracked in story descriptions.",
     "synonyms": [],
     "related": [
       "Bug Triage",
@@ -1509,17 +823,6 @@
       "Probability",
       "Risk Rating",
       "Sprint Planning"
-    ]
-  },
-  {
-    "name": "Risk Rating",
-    "definition": "A numerical assessment of a bug's overall risk, calculated by multiplying probability (1-5) by impact (1-5) to produce a value from 1-25, where 25 is highest risk. Can be manually set or suggested by Atono based on bug description. Required along with team assignment for a bug to move out of Bug Triage.",
-    "synonyms": [],
-    "related": [
-      "Bug",
-      "Bug Triage",
-      "Impact",
-      "Probability"
     ]
   },
   {
@@ -1564,17 +867,6 @@
     ]
   },
   {
-    "name": "SAML",
-    "definition": "Security Assertion Markup Language, a standard for exchanging authentication information between an identity provider and service provider. Atono supports SAML 2.0 for single sign-on on paid plans.",
-    "synonyms": [
-      "SAML 2.0"
-    ],
-    "related": [
-      "Identity Provider",
-      "SSO"
-    ]
-  },
-  {
     "name": "Saved View",
     "definition": "A named, personal collection of filters, sorting, and column customizations on the Everything page that can be returned to without reapplying settings. Can be shared with users or teams, and added as widgets to the Home page. View names must be unique per user (up to 100 characters).",
     "synonyms": [],
@@ -1583,21 +875,6 @@
       "Filter",
       "Shared View",
       "Widget"
-    ]
-  },
-  {
-    "name": "Scope",
-    "definition": "The defined set of features, stories, or work committed to for a sprint, epic, release, or project. Scope sets expectations for what will and will not be delivered in a given timeframe. Scope changes mid-sprint are discouraged in Scrum; Atono warns teams before allowing sprint scope modifications. Scope is often discussed alongside capacity to determine whether commitments are realistic.",
-    "synonyms": [
-      "Sprint Scope",
-      "Project Scope"
-    ],
-    "related": [
-      "Backlog (Page)",
-      "Capacity",
-      "Epic",
-      "Sprint",
-      "Story"
     ]
   },
   {
@@ -1634,17 +911,6 @@
     ]
   },
   {
-    "name": "SDK",
-    "definition": "Software Development Kit, a set of tools and libraries from Atono for integrating feature flags and usage tracking into applications. Available for web and React with client-side support. Requires environment key for initialization. Version 1.1.0+ required for usage tracking.",
-    "synonyms": [],
-    "related": [
-      "Environment Key",
-      "Feature Engagement",
-      "Feature Flag",
-      "Usage Tracking"
-    ]
-  },
-  {
     "name": "Search",
     "definition": "A global fuzzy keyword search across all stories, bugs, and epics the user has permission to view. Search matches against titles, item IDs, descriptions, user stories, acceptance criteria, and active (unresolved) comments. Results are ranked by relevance. Search is accessible from the top navigation bar and can be used alongside filters on the Everything page for more precise queries.",
     "synonyms": [
@@ -1669,16 +935,6 @@
     ]
   },
   {
-    "name": "Shared View",
-    "definition": "A saved view that has been shared with specific users or teams, appearing in their shared views list. Can be re-shared by recipients. Original owner can remove any shares. Shared views remember filters and sorting but not column selections.",
-    "synonyms": [],
-    "related": [
-      "Everything (Page)",
-      "Filter",
-      "Saved View"
-    ]
-  },
-  {
     "name": "Slack Integration",
     "definition": "A workspace integration connecting Atono to a Slack workspace, enabling automated updates and communication across both platforms. Capabilities include: creating dedicated Slack channels for teams and individual stories, posting updates when team settings or feature flag configurations change, and connecting individual Atono user accounts to their Slack identities for mention routing. Configured by an Administrator from Workspace Settings.",
     "synonyms": [
@@ -1700,15 +956,6 @@
       "Environment",
       "Feature Flag",
       "Flag Configuration"
-    ]
-  },
-  {
-    "name": "Snooze",
-    "definition": "An action that temporarily hides the staleness indicator for a specific item in a specific workflow step for a chosen duration (1 day, 1 week, 1 month, or until changed). Only available to team admins and workspace Administrators. Resets if the item changes steps or teams.",
-    "synonyms": [],
-    "related": [
-      "Staleness Indicator",
-      "Workflow Step"
     ]
   },
   {
@@ -1752,17 +999,6 @@
       "Scrum",
       "Sprint",
       "Sprint Goal"
-    ]
-  },
-  {
-    "name": "Sprint Calendar",
-    "definition": "A Scrum-only team page providing a visual schedule of past, active, and future sprints. Shows sprint names, item counts, story point totals, and projected capacity for future sprints. Supports scrolling, zooming (days to 5 years), resizing sprint height, creating/editing/deleting sprints, and viewing sprint details including burndown charts.",
-    "synonyms": [],
-    "related": [
-      "Burndown Chart",
-      "Scrum",
-      "Sprint",
-      "Story Points"
     ]
   },
   {
@@ -1830,27 +1066,6 @@
     ]
   },
   {
-    "name": "Staleness Indicator",
-    "definition": "A red hourglass icon appearing on stories or bugs in In Progress steps when time spent exceeds 3 standard deviations of the team's average for similar items in that step. Requires at least 5 historical items for calculation. Excludes outliers. Can be snoozed by team admins and workspace Administrators. Resets when item changes steps or teams.",
-    "synonyms": [],
-    "related": [
-      "Cycle Time",
-      "In Progress (Workflow Category)",
-      "Outlier",
-      "Snooze"
-    ]
-  },
-  {
-    "name": "Standard User",
-    "definition": "The default workspace role assigned to all users, providing typical functionality including creating teams, managing public team backlogs (without backlog owners), creating/managing bugs and stories on public teams, and using most Atono features. Can gain additional privileges through team roles or feature flag permissions.",
-    "synonyms": [],
-    "related": [
-      "Roles and Permissions",
-      "Team Role",
-      "Workspace Role"
-    ]
-  },
-  {
     "name": "Story",
     "definition": "The core unit of user-focused work in Atono, capturing what needs to be built and why. Each story includes a title, one or more user stories in 'As a / I want to / So that' format, hierarchical acceptance criteria, an optional additional context section, story size, product theme, assignee, epic, timebox, and linked feature flags. Stories move through a team's workflow steps, track cycle time, support version history, comments, attachments, subtasks, and linked items, and can be duplicated or split into multiple stories.",
     "synonyms": [],
@@ -1871,18 +1086,6 @@
     ]
   },
   {
-    "name": "Story Map",
-    "definition": "A two-dimensional visual arrangement of user stories organized by user journey across the horizontal axis and priority or detail level down the vertical axis. Story maps help teams see the complete user experience, identify gaps, and plan incremental releases. The top row represents the high-level journey steps (backbone); lower rows contain the detailed stories that support each step.",
-    "synonyms": [
-      "User Story Map"
-    ],
-    "related": [
-      "Epic",
-      "Story",
-      "User Story"
-    ]
-  },
-  {
     "name": "Story Points",
     "definition": "A numerical measure derived from story size (XXS=1, XS=2, S=3, M=5, L=8, XL=13, XXL=21) using Fibonacci numbers. Unsized stories are assigned the nearest Fibonacci number to the team's average. Used for sprint capacity planning, burndown charts, and velocity tracking in Scrum teams.",
     "synonyms": [],
@@ -1893,26 +1096,6 @@
       "Story Size",
       "Total Story Points",
       "Velocity"
-    ]
-  },
-  {
-    "name": "Story Refinement",
-    "definition": "A workspace-wide backlog for capturing ideas and preparing stories before assigning them to teams. Has fixed workflow steps (Idea, Refinement, Ready for Assignment, Won't Do) accessible to all users. Does not track sizing, estimated completion dates, cycle time, or staleness.",
-    "synonyms": [],
-    "related": [
-      "Backlog (Page)",
-      "Story",
-      "Team"
-    ]
-  },
-  {
-    "name": "Story Size",
-    "definition": "A relative measure of effort to complete a story: Unsized, XXS, XS, S, M, L, XL, XXL. Can be manually set or suggested by Atono based on similar completed stories (requires 9+ sized stories in 3+ sizes). Converted to story points for planning. Cleared when story is reassigned to a different team.",
-    "synonyms": [],
-    "related": [
-      "Story",
-      "Story Points",
-      "Team"
     ]
   },
   {
@@ -1940,19 +1123,6 @@
     ]
   },
   {
-    "name": "Team Administrator",
-    "definition": "A team role with permissions to edit team details, delete team, modify access type and methodology, manage team admins and backlog owners, customize workflow, and connect Slack channels. Does not need to be a team member. Cannot remove themselves as admin; at least one admin must remain.",
-    "synonyms": [
-      "Team Admin"
-    ],
-    "related": [
-      "Backlog Owner",
-      "Team",
-      "Team Role",
-      "Workflow"
-    ]
-  },
-  {
     "name": "Team Member",
     "definition": "A team role granted automatically when a user joins a public or private team. Can edit team name/description, connect/remove Slack channels, and (for private teams) access the team backlog and manage team membership.",
     "synonyms": [],
@@ -1960,71 +1130,6 @@
       "Slack Integration",
       "Team",
       "Team Role"
-    ]
-  },
-  {
-    "name": "Team Overview (Page)",
-    "definition": "A team page showing general information about a team including its name, description, methodology (Scrum or Kanban), access type (public or private), members, and stakeholders. Stakeholders — users with a critical team role (Team Administrator or Backlog Owner) who are not team members — appear in a dedicated section for visibility.",
-    "synonyms": [
-      "Team Overview"
-    ],
-    "related": [
-      "Backlog Owner",
-      "Kanban",
-      "Private Team",
-      "Scrum",
-      "Stakeholder",
-      "Team",
-      "Team Administrator",
-      "Team Member"
-    ]
-  },
-  {
-    "name": "Team Role",
-    "definition": "Permissions granted within a specific team (Team Member, Team Administrator, Backlog Owner) that do not affect workspace-level access. Allow users to manage teams without requiring workspace-wide Administrator privileges.",
-    "synonyms": [],
-    "related": [
-      "Backlog Owner",
-      "Roles and Permissions",
-      "Team Administrator",
-      "Team Member"
-    ]
-  },
-  {
-    "name": "Technical Changes",
-    "definition": "An AI Context section recording current implementation changes made by AI tools for a story or bug. Includes what was added/changed/removed, test updates, behavior changes, and outcomes. Reflects current state; reverted changes should be removed. Also called SUMMARY in MCP contexts.",
-    "synonyms": [
-      "SUMMARY"
-    ],
-    "related": [
-      "AI Context",
-      "Bug",
-      "Story"
-    ]
-  },
-  {
-    "name": "Technical Debt",
-    "definition": "Accumulated shortcuts, deferred improvements, and suboptimal design decisions in a codebase that require future rework. Technical debt may be intentional (a deliberate shortcut to meet a deadline) or unintentional (poor design discovered later). Left unaddressed, technical debt slows future development and increases the risk of bugs. Teams often track technical debt as stories or bugs with a dedicated product theme.",
-    "synonyms": [
-      "Tech Debt"
-    ],
-    "related": [
-      "Bug",
-      "Product Theme",
-      "Story",
-      "Technical Investigation"
-    ]
-  },
-  {
-    "name": "Technical Investigation",
-    "definition": "An AI Context section capturing discoveries, research findings, and constraints gathered during AI-assisted implementation. Includes findings, relevant files/endpoints/dependencies, open questions, and recommended next steps. Called INVESTIGATION in MCP contexts.",
-    "synonyms": [
-      "INVESTIGATION"
-    ],
-    "related": [
-      "AI Context",
-      "Bug",
-      "Story"
     ]
   },
   {
@@ -2036,18 +1141,6 @@
       "Kanban",
       "Lead Time",
       "Velocity"
-    ]
-  },
-  {
-    "name": "Timebox",
-    "definition": "A named, date-bounded container grouping stories and bugs into a defined delivery window. Can contain up to 100 items, appear on multiple timelines, and show warnings when items may not complete by end date. Displayed on timelines with visual indicators for themes, teams, and delivery risks. Detail view shows item-level projected completion and total story points if all items belong to one team.",
-    "synonyms": [],
-    "related": [
-      "Bug",
-      "Projected Completion",
-      "Story",
-      "Timeline",
-      "Total Story Points"
     ]
   },
   {
@@ -2074,19 +1167,6 @@
     ]
   },
   {
-    "name": "Total Story Points",
-    "definition": "The combined Fibonacci-based size of all visible stories in a column, sprint, or timebox, including an estimated size for unsized stories based on team average. Appears on Scrum backlogs (sprint headers), In Progress pages (workflow steps), Sprint Calendar (future sprints with projected capacity), Everything page (when filtered to one team), and timelines/timeboxes (when all items belong to one team). Updates dynamically as stories are added, removed, or resized.",
-    "synonyms": [],
-    "related": [
-      "Backlog (Page)",
-      "In Progress (Page)",
-      "Sprint",
-      "Story Points",
-      "Story Size",
-      "Timebox"
-    ]
-  },
-  {
     "name": "Usage Tracking",
     "definition": "Recording user interactions with features to power Feature Engagement graphs. Implemented by calling SDK record() methods in code or by mapping clicks via the Atono Chrome extension. Requires SDK v1.1.0+ running client-side. Events include story ID, environment, optional customer, and auto-detected location from IP.",
     "synonyms": [],
@@ -2096,33 +1176,6 @@
       "Feature Engagement",
       "SDK",
       "Story"
-    ]
-  },
-  {
-    "name": "User Feedback",
-    "definition": "Input gathered from users through interviews, surveys, support tickets, usage analytics, or direct observation that reveals how people interact with the product and what problems they experience. User feedback drives feature requests, informs acceptance criteria, and validates product decisions. In Atono, insights from user feedback are typically documented in story descriptions or design decisions sections and may be linked to customer data visible through feature engagement and usage tracking.",
-    "synonyms": [
-      "Customer Feedback",
-      "Voice of the Customer"
-    ],
-    "related": [
-      "Customer",
-      "Design Decisions",
-      "Feature Engagement",
-      "Feature Request",
-      "Product Discovery",
-      "Usage Tracking"
-    ]
-  },
-  {
-    "name": "User Profile",
-    "definition": "A page showing user details including email, name, workspace role, and team memberships. Users can edit their own name, connect Slack, manage API keys, and configure notification preferences (email for assignments). Accessible from the workspace header menu.",
-    "synonyms": [],
-    "related": [
-      "API Key",
-      "Notification",
-      "Slack Integration",
-      "Workspace Role"
     ]
   },
   {
@@ -2150,20 +1203,6 @@
     ]
   },
   {
-    "name": "Velocity Averaging Window",
-    "definition": "A team-level setting controlling how many recent completed sprints are used to calculate velocity. A shorter window reacts faster to recent performance; a longer window smooths out outlier sprints. Configured by Team Administrators and affects sprint capacity projections on the Sprint Calendar and Backlog.",
-    "synonyms": [
-      "Averaging Window"
-    ],
-    "related": [
-      "Scrum",
-      "Sprint",
-      "Sprint Calendar",
-      "Team Administrator",
-      "Velocity"
-    ]
-  },
-  {
     "name": "Velocity Chart",
     "definition": "A bar chart showing the number of story points a Scrum team completed in each past sprint, used to visualize trends in team throughput over time. The velocity chart helps teams identify whether they are improving, declining, or maintaining consistent output, and informs capacity planning for future sprints.",
     "synonyms": [],
@@ -2188,20 +1227,6 @@
     ]
   },
   {
-    "name": "Watcher",
-    "definition": "A user who follows a story or bug to receive notifications about changes to that item without being the primary assignee. In Atono, following an item (via the star icon) acts as the watch mechanism, causing the item to appear in the user's followed items widget and personal filters. This is called Follow in Atono.",
-    "synonyms": [
-      "Follower",
-      "Subscriber"
-    ],
-    "related": [
-      "Assignee",
-      "Follow",
-      "Notification",
-      "Widget"
-    ]
-  },
-  {
     "name": "Webhook",
     "definition": "An HTTP callback that sends real-time event data from Atono to an external URL when a specified event occurs, such as a story being created, updated, or moved to a new workflow step. Webhooks enable integrations with external systems like CI/CD pipelines, dashboards, or custom automation tools without requiring the external system to poll Atono continuously.",
     "synonyms": [
@@ -2212,17 +1237,6 @@
       "GitHub Integration",
       "Slack Integration",
       "Workflow"
-    ]
-  },
-  {
-    "name": "Widget",
-    "definition": "A customizable panel on the Home page displaying items from a saved or shared view. Users can add widgets for any view, remove them, and rearrange them. Default widgets include Assigned to Me and Following.",
-    "synonyms": [],
-    "related": [
-      "Follow",
-      "Home (Page)",
-      "Saved View",
-      "Shared View"
     ]
   },
   {
@@ -2251,22 +1265,8 @@
     ]
   },
   {
-    "name": "Work Item",
-    "definition": "A generic term encompassing any story, bug, or epic in Atono. Work item is used in contexts where a statement applies equally to all three types, such as search, linked items, the Everything page, and API documentation. Each work item has a unique item ID in the format TYPE-NUMBER.",
-    "synonyms": [
-      "Item"
-    ],
-    "related": [
-      "Bug",
-      "Epic",
-      "Everything (Page)",
-      "Item ID",
-      "Story"
-    ]
-  },
-  {
     "name": "Workflow",
-    "definition": "A customizable sequence of 4–25 named steps that stories and bugs move through from ready-to-start to completion. Each step belongs to one of four workflow categories: To do, In Progress, Done, or Won't do. Steps have a name and color. Only one step can exist in the To do category and one in the Won't do category; the In Progress and Done categories can have multiple steps. Cycle time is measured across all In Progress steps. Teams can reorder steps and rename them; the workflow is shared across all team members.",
+    "definition": "A customizable sequence of 4\u201325 named steps that stories and bugs move through from ready-to-start to completion. Each step belongs to one of four workflow categories: To do, In Progress, Done, or Won't do. Steps have a name and color. Only one step can exist in the To do category and one in the Won't do category; the In Progress and Done categories can have multiple steps. Cycle time is measured across all In Progress steps. Teams can reorder steps and rename them; the workflow is shared across all team members.",
     "synonyms": [],
     "related": [
       "Cycle Time",
@@ -2285,49 +1285,11 @@
     ]
   },
   {
-    "name": "Workflow Step",
-    "definition": "A named stage in a workflow with assigned color and category (To do, In progress, Done, Won't do). Can be configured to apply to stories, bugs, or both. Steps can be reordered, renamed, added (up to 25 total), deleted (with reassignment), and moved between categories by team admins and workspace Administrators.",
-    "synonyms": [
-      "Step"
-    ],
-    "related": [
-      "Cycle Time",
-      "Team",
-      "Workflow",
-      "Workflow Category"
-    ]
-  },
-  {
     "name": "Workspace",
     "definition": "The top-level container for all teams, stories, bugs, users, and other elements in Atono for a company. Each workspace has a unique URL (example.atono.io), name, up to 50 teams, and plan-based limits for users and storage. Created during initial signup with the creator as Workspace Owner.",
     "synonyms": [],
     "related": [
       "Team",
-      "Workspace Owner"
-    ]
-  },
-  {
-    "name": "Workspace Owner",
-    "definition": "A workspace role with highest-level permissions including all Administrator capabilities plus managing plans, billing, adding/removing other Workspace Owners, and deleting the workspace. Cannot remove their own role or be deleted. Automatically assigned to workspace creator.",
-    "synonyms": [],
-    "related": [
-      "Administrator",
-      "Roles and Permissions",
-      "Workspace",
-      "Workspace Role"
-    ]
-  },
-  {
-    "name": "Workspace Role",
-    "definition": "A primary permission level defining system-wide access: Workspace Owner (highest), Administrator (full admin without billing), Product Manager (theme/glossary management), or Standard User (default). Separate from team roles and feature flag permissions.",
-    "synonyms": [
-      "User Role"
-    ],
-    "related": [
-      "Administrator",
-      "Product Manager",
-      "Roles and Permissions",
-      "Standard User",
       "Workspace Owner"
     ]
   }
