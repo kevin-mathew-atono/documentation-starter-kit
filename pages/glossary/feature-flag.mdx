@@ -1,6 +1,6 @@
 # Feature Flag
 
-A named toggle controlling whether a feature is visible or active in each environment, without requiring a code deployment. Flags are created as standalone items or applied to stories. Each flag has a unique name (4–30 characters, lowercase letters and underscores), a description, an optional flag owner, and per-environment configurations that can target specific customers or locations via slices. The Atono SDK evaluates flags in real time and records the last evaluation timestamp and usage data.
+A named toggle that controls whether a feature is active in a given environment without requiring a code deployment. Each flag has a unique key, an optional description, a flag owner, and per-environment on/off states. Flags can target specific customers via slices. They can be created standalone or linked to a story. The Atono SDK evaluates flags at runtime and records evaluation timestamps for observability.
 
 ## Also Known As
 
