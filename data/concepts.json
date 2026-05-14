@@ -1,20 +1,5 @@
 [
   {
-    "name": "A/B Test",
-    "definition": "A controlled experiment that presents two or more variants of a feature to different user groups simultaneously and measures behavioral differences. A/B tests generate evidence for product decisions by comparing metrics between a control group and one or more treatment groups. In Atono, A/B tests are enabled by using feature flags with customer-based slice targeting to route different users to different variants.",
-    "synonyms": [
-      "Split Test",
-      "Experiment"
-    ],
-    "related": [
-      "Customer",
-      "Feature Flag",
-      "Flag Targeting",
-      "Slice",
-      "Usage Tracking"
-    ]
-  },
-  {
     "name": "Acceptance Criteria",
     "definition": "Testable conditions that define when a story is complete, written as a hierarchical list with up to three levels of nesting. Also called ACs. Each top-level criterion can have sub-criteria and leaf-level criteria. Criteria support inline comments anchored to specific text, attachments, and persistent URLs. When a story is split, acceptance criteria are preserved based on whether parent criteria are moved with all their children. Acceptance criteria are versioned and any edit appears in the story's Activities log.",
     "synonyms": [
@@ -31,7 +16,7 @@
   },
   {
     "name": "Active Sprint",
-    "definition": "The one sprint a Scrum team is currently executing toward a sprint goal. Only one sprint can be active per team at any given time. Active sprint items appear on the In Progress page, contribute to burndown charts, and count toward velocity calculations when the sprint is completed. Starting a new sprint without closing the previous one is not permitted.",
+    "definition": "The single sprint a Scrum team is currently executing. Only one sprint can be active per team at a time. Items in the active sprint appear on the In Progress page and contribute to burndown charts and velocity calculations when the sprint closes. A new sprint cannot be started until the current one is completed or cancelled.",
     "synonyms": [],
     "related": [
       "Burndown Chart",
@@ -106,35 +91,6 @@
     ]
   },
   {
-    "name": "Atono Chrome Extension",
-    "definition": "A Chrome browser extension that enables bug reporting with automatic context capture, feature flag flipping, and click mapping for usage tracking directly from your application. Requires meta tags on your application pages to identify the environment and optionally the customer.",
-    "synonyms": [
-      "Chrome Extension"
-    ],
-    "related": [
-      "Bug",
-      "Environment",
-      "Feature Engagement",
-      "Feature Flag",
-      "Meta Tag"
-    ]
-  },
-  {
-    "name": "Atono MCP Server",
-    "definition": "A local Docker-based server implementing the Model Context Protocol that connects AI development tools like Cursor, Claude, or VS Code to an Atono workspace. Allows AI tools to read and update stories, bugs, workflows, and timeboxes using authenticated workspace access. Updates are marked with a diamond icon in Activities.",
-    "synonyms": [
-      "MCP Server"
-    ],
-    "related": [
-      "Activities",
-      "AI Context",
-      "API Key",
-      "Bug",
-      "Docker",
-      "Story"
-    ]
-  },
-  {
     "name": "Attachment",
     "definition": "A file added to a story or bug, displayed as thumbnails for images/videos or as file info for other types. Can be attached inline to specific acceptance criteria or to the general attachments area. Limited to 100 files per item, 50 MB per file, with workspace-level storage limits based on plan. Attachment URLs expire after a short time and must be re-fetched.",
     "synonyms": [],
@@ -175,18 +131,6 @@
     ]
   },
   {
-    "name": "Backlog Management",
-    "definition": "A team setting that, when enabled, designates specific backlog owners as the only users authorized to add, create, reorder, delete, or move stories in the To do and Won't do workflow categories. For Scrum teams, backlog management also controls who can plan and modify sprint scope. When disabled, any user with team access can manage the backlog freely. Up to 10 backlog owners can be assigned to a team.",
-    "synonyms": [],
-    "related": [
-      "Backlog Owner",
-      "Scrum",
-      "Sprint",
-      "Story",
-      "Team"
-    ]
-  },
-  {
     "name": "Blocker",
     "definition": "An impediment preventing a story or bug from progressing through the workflow. Blockers can be internal (a missing decision, an unresolved dependency) or external (a third-party outage, waiting on another team). Identified in daily standups, blockers should be escalated and resolved by the team or Scrum Master as quickly as possible to minimize cycle time impact.",
     "synonyms": [
@@ -198,19 +142,6 @@
       "Dependency",
       "Staleness Indicator",
       "Workflow"
-    ]
-  },
-  {
-    "name": "Board View",
-    "definition": "A visual display of work items organized in vertical columns, one per workflow step, allowing teams to see the state of all active work at a glance. Items can be dragged between columns to update their workflow step. Board view is the primary view on the In Progress page in Atono and supports filtering by assignee, size, and other fields.",
-    "synonyms": [
-      "Kanban Board"
-    ],
-    "related": [
-      "Filter",
-      "In Progress (Page)",
-      "Workflow",
-      "Workflow Step"
     ]
   },
   {
@@ -233,34 +164,6 @@
     ]
   },
   {
-    "name": "Bug Triage",
-    "definition": "A workspace-wide page and process for evaluating newly reported bugs before they are assigned to a team. Bugs remain in triage until they receive a team assignment and a risk rating (calculated as probability \u00d7 impact). The triage page is organized into Reported Bugs, More Info Required, and Won't Do sections. A badge indicates when bugs have been in triage for more than seven days without action.",
-    "synonyms": [
-      "Triage"
-    ],
-    "related": [
-      "Backlog (Page)",
-      "Bug",
-      "Impact",
-      "Probability",
-      "Risk Rating"
-    ]
-  },
-  {
-    "name": "Bulk Edit",
-    "definition": "Simultaneously applying a change to multiple selected stories or bugs at once. Supported bulk edits in Atono include updating the assignee, workflow step, story size, product theme, timebox, and team. Bulk editing reduces repetitive work when reorganizing a backlog or updating a set of items after a scope decision.",
-    "synonyms": [
-      "Bulk Action",
-      "Multi-edit"
-    ],
-    "related": [
-      "Backlog (Page)",
-      "Bug",
-      "Everything (Page)",
-      "Story"
-    ]
-  },
-  {
     "name": "Burndown Chart",
     "definition": "A Scrum team chart tracking remaining story points in a sprint over time, updated as stories are completed or moved out of scope. Plots actual remaining work against an ideal linear burn rate and projects sprint completion based on recent team velocity. Flags stories at risk of not finishing and surfaces items that could be pulled in if capacity allows. Available for active and completed sprints; the team's configured time zone is used for date grouping.",
     "synonyms": [],
@@ -270,20 +173,6 @@
       "Scrum",
       "Sprint",
       "Sprint Goal",
-      "Story Points",
-      "Velocity"
-    ]
-  },
-  {
-    "name": "Capacity",
-    "definition": "The total available work effort a team has in a sprint or time period, typically expressed in story points or hours. Capacity accounts for team size, individual availability, holidays, and planned non-project time. Comparing planned sprint scope against capacity helps teams avoid overcommitting during sprint planning.",
-    "synonyms": [
-      "Team Capacity"
-    ],
-    "related": [
-      "Backlog (Page)",
-      "Sprint",
-      "Sprint Planning",
       "Story Points",
       "Velocity"
     ]
@@ -330,22 +219,8 @@
     ]
   },
   {
-    "name": "Daily Standup",
-    "definition": "A short, time-boxed synchronization meeting held each working day where team members share what they completed yesterday, what they plan to do today, and any blockers preventing progress. Also called a daily scrum in the Scrum framework. The standup is designed to improve team coordination and surface impediments early, not to provide status reports to management.",
-    "synonyms": [
-      "Daily Scrum",
-      "Standup"
-    ],
-    "related": [
-      "Blocker",
-      "Scrum",
-      "Sprint",
-      "Team"
-    ]
-  },
-  {
     "name": "Definition of Done",
-    "definition": "A shared team agreement listing all criteria that must be satisfied before a story or bug is considered complete. Common criteria include code reviewed, tests written, documentation updated, and acceptance criteria verified. The definition of done ensures consistent quality across the team and reduces ambiguity about when work can be marked as finished.",
+    "definition": "A team-wide agreement specifying all conditions a story or bug must satisfy before it can be marked complete. Criteria typically include code review, automated tests passing, acceptance criteria verified, and documentation updated. The definition of done is applied consistently across all work items and is distinct from acceptance criteria, which are story-specific. Teams can view and edit their definition of done in team settings.",
     "synonyms": [
       "DoD"
     ],
@@ -354,20 +229,6 @@
       "Done (Workflow Category)",
       "Story",
       "Workflow Category"
-    ]
-  },
-  {
-    "name": "Definition of Ready",
-    "definition": "A set of criteria a story must satisfy before a team can commit to working on it in a sprint or pull it from the backlog. Typical criteria include having clear acceptance criteria, an estimated size, and no unresolved dependencies. The definition of ready reduces mid-sprint surprises and helps teams start work with shared understanding.",
-    "synonyms": [
-      "DoR"
-    ],
-    "related": [
-      "Acceptance Criteria",
-      "Backlog (Page)",
-      "Dependency",
-      "Sprint",
-      "Story Size"
     ]
   },
   {
@@ -393,26 +254,6 @@
       "In Progress (Workflow Category)",
       "Workflow Category",
       "Workflow Step"
-    ]
-  },
-  {
-    "name": "Draft",
-    "definition": "An unsaved version of a story or bug being created, displayed in a partial overlay that allows navigation while editing. Persists across browser refreshes and sign-outs. Only one draft can exist per user at a time, indicated by a badge on Create New when minimized.",
-    "synonyms": [],
-    "related": [
-      "Bug",
-      "Story"
-    ]
-  },
-  {
-    "name": "Duplicate",
-    "definition": "An action that creates a copy of a story or bug, prefixing its title with 'Copy of' and carrying over the description, risk rating (bugs), and size/product theme (stories). The copy's workflow step, assignee, backlog position, and timebox depend on the original item's workflow category. Items in To do or In Progress keep their team assignment; items in Done or Won't do are unassigned. The duplicate can optionally be linked to the original.",
-    "synonyms": [],
-    "related": [
-      "Bug",
-      "Linked Items",
-      "Story",
-      "Workflow Category"
     ]
   },
   {
@@ -488,78 +329,6 @@
     ]
   },
   {
-    "name": "Flag Targeting",
-    "definition": "Rules within a flag's per-environment configuration that determine which customers or locations see the flag as enabled. Targeting uses slice definitions with operators (is, is not, contains, is one of, is in, is not in) to evaluate customer identifiers and location data. When no targeting rules match, the flag falls back to the environment's default ON/OFF state.",
-    "synonyms": [
-      "Targeting Rules"
-    ],
-    "related": [
-      "Customer",
-      "Environment",
-      "Feature Flag",
-      "Flag Configuration",
-      "Location",
-      "Slice"
-    ]
-  },
-  {
-    "name": "GitHub Integration",
-    "definition": "A workspace integration connecting Atono to a GitHub organization, enabling automatic linking of pull requests to stories and bugs. Pull requests are linked when the story or bug ID appears in the PR title, description, branch name, or optionally in comments and commit messages. Requires a Workspace Owner or Administrator to configure.",
-    "synonyms": [],
-    "related": [
-      "Activities",
-      "Bug",
-      "Pull Request",
-      "Story"
-    ]
-  },
-  {
-    "name": "Home (Page)",
-    "definition": "A user's landing page in Atono showing widgets for assigned work, followed items, and any saved/shared views added as widgets. Includes shortcuts to invite users, join/create teams, and connect Slack. Widgets can be added, removed, and reordered per user.",
-    "synonyms": [],
-    "related": [
-      "Follow",
-      "Saved View",
-      "Shared View",
-      "Widget"
-    ]
-  },
-  {
-    "name": "Impact",
-    "definition": "The severity of a bug's effect on users, rated 1-5 (Negligible to Severe) during Bug Triage. Multiplied by probability to calculate the bug's risk rating (1-25 scale). Can be manually set or suggested by Atono.",
-    "synonyms": [],
-    "related": [
-      "Bug",
-      "Bug Triage",
-      "Probability",
-      "Risk Rating"
-    ]
-  },
-  {
-    "name": "Import",
-    "definition": "The process of bringing existing work from Jira or Linear into Atono, including issues, teams, projects, and optionally users. Issues become stories or bugs with preserved metadata (dates, assignments, descriptions). Teams are matched by name or created. External IDs preserve original issue keys.",
-    "synonyms": [],
-    "related": [
-      "Bug",
-      "External ID",
-      "Story",
-      "Team"
-    ]
-  },
-  {
-    "name": "In Progress (Page)",
-    "definition": "A team page showing active work moving through workflow steps. For Scrum teams, displays only the active sprint. For Kanban teams, shows the 20 most recent To do items plus all work in progress. Supports list/board views, filters, staleness indicators, and optional display of pull requests, product themes, timeboxes, and total story points.",
-    "synonyms": [],
-    "related": [
-      "Backlog (Page)",
-      "Kanban",
-      "Scrum",
-      "Sprint",
-      "Team",
-      "Workflow Step"
-    ]
-  },
-  {
     "name": "In Progress (Workflow Category)",
     "definition": "A workflow category containing steps representing active work. Time spent in these steps contributes to an item's cycle time. The default workflow includes Design, Development, Test, and Review in this category. Each workflow must have at least one In Progress step for stories or bugs.",
     "synonyms": [],
@@ -571,33 +340,19 @@
     ]
   },
   {
-    "name": "Incident",
-    "definition": "An unplanned interruption or significant reduction in the quality of a production service. Incidents range from complete outages to degraded performance and typically require immediate investigation and resolution. In Atono, incidents are tracked as bugs with a high risk rating, using the affected environment field to indicate the impacted deployment stage and the description to capture reproduction steps, impact scope, and timeline. A postmortem may follow to prevent recurrence.",
+    "name": "Integration",
+    "definition": "A connection between Atono and an external tool or service that synchronizes data or triggers actions across systems. Integrations are configured at the workspace or team level and include GitHub for pull request linking, Slack for notifications, and identity providers for SSO. Activity originating from an integration is labeled with its source in the Activities log.",
     "synonyms": [
-      "Production Incident",
-      "Outage"
+      "External Integration",
+      "App Integration"
     ],
     "related": [
-      "Affected Environment",
-      "Bug",
-      "Bug Triage",
-      "Environment",
-      "Postmortem",
-      "Risk Rating"
-    ]
-  },
-  {
-    "name": "Iteration",
-    "definition": "A fixed-length time-boxed development cycle used to deliver a defined set of work. In Scrum, iterations are called sprints. In other agile frameworks, iteration length and structure vary. The term is often used interchangeably with sprint in Atono contexts.",
-    "synonyms": [
-      "Sprint",
-      "Development Iteration"
-    ],
-    "related": [
-      "Increment",
-      "Scrum",
-      "Sprint",
-      "Timebox"
+      "Activities",
+      "Audit Log",
+      "GitHub Integration",
+      "Slack Integration",
+      "SSO",
+      "Webhook"
     ]
   },
   {
@@ -614,40 +369,6 @@
     ]
   },
   {
-    "name": "Key Result",
-    "definition": "A specific, measurable outcome used to track progress toward an OKR objective. Key results are quantitative (e.g., increase feature adoption by 20%) and have a defined target. Teams map their stories and epics to key results to ensure delivery work connects to measurable business outcomes.",
-    "synonyms": [],
-    "related": [
-      "OKR",
-      "Product Goal"
-    ]
-  },
-  {
-    "name": "Kill Switch",
-    "definition": "A feature flag configured specifically to provide an immediate, reliable way to disable a feature across all users in any environment without a code deployment. Kill switches are a safety mechanism for production incidents, allowing teams to turn off a misbehaving feature in seconds. Best practice is to keep kill switches separate from flags used for gradual rollouts or A/B testing.",
-    "synonyms": [
-      "Emergency Disable",
-      "Circuit Breaker Flag"
-    ],
-    "related": [
-      "Feature Flag",
-      "Flag Configuration",
-      "Flag Status",
-      "Rollout"
-    ]
-  },
-  {
-    "name": "Lead Time",
-    "definition": "The total elapsed time from when a work item is created or requested to when it is fully delivered (moved to Done). Lead time encompasses both waiting time in the backlog and active work time in In Progress steps. It is a broader measure than cycle time, which counts only active work time. Reducing lead time is a key goal of lean and agile delivery practices.",
-    "synonyms": [],
-    "related": [
-      "Cycle Time",
-      "Done (Workflow Category)",
-      "In Progress (Workflow Category)",
-      "Throughput"
-    ]
-  },
-  {
     "name": "Linked Items",
     "definition": "Stories, bugs, or epics explicitly connected to each other to show relationships like dependencies or related work. Links are bidirectional and visible in the Linked Items section of each item. Can include suggested items based on content similarity. Does not include inline item ID mentions, which are clickable but not formal links.",
     "synonyms": [],
@@ -658,31 +379,6 @@
     ]
   },
   {
-    "name": "List View",
-    "definition": "A tabular display of work items with one item per row and configurable columns such as title, assignee, size, workflow step, and product theme. List view supports sorting by any column and is optimized for bulk review and planning. The Backlog page and Everything page both offer a list view alongside other display options.",
-    "synonyms": [
-      "Table View"
-    ],
-    "related": [
-      "Backlog (Page)",
-      "Bulk Edit",
-      "Everything (Page)",
-      "Filter"
-    ]
-  },
-  {
-    "name": "Mention",
-    "definition": "Tagging a specific user in a comment or description by typing @ followed by their name or email. A mention sends the tagged user a notification and creates a link to their profile. Mentions are supported in story and bug comments and in the description fields. Mentioned users are notified by email.",
-    "synonyms": [
-      "\"@mention, Tag\""
-    ],
-    "related": [
-      "Comment",
-      "Notification",
-      "User Profile"
-    ]
-  },
-  {
     "name": "Milestone",
     "definition": "A significant checkpoint marking a key delivery or decision point in a product plan, such as a public launch, a regulatory deadline, or a major feature release. In Atono, milestones are represented as release markers on a timeline, providing a visual anchor for planning and communicating delivery commitments.",
     "synonyms": [],
@@ -690,19 +386,6 @@
       "Release",
       "Timebox",
       "Timeline"
-    ]
-  },
-  {
-    "name": "Notification",
-    "definition": "An email message sent to a user when a relevant event occurs in Atono. Notification triggers include: being assigned to a story or bug, being @mentioned in a comment, a comment being accepted or rejected, a story or bug being moved to Done. Notifications are sent to the user's registered email address. Users can adjust which events generate notifications in their account settings.",
-    "synonyms": [
-      "Email Notification"
-    ],
-    "related": [
-      "Assignee",
-      "Comment",
-      "Mention",
-      "Story"
     ]
   },
   {
@@ -773,19 +456,6 @@
     ]
   },
   {
-    "name": "Pull Request",
-    "definition": "A proposed code change in a Git-based version control system, automatically linked to Atono stories or bugs when the Atono item ID is mentioned in the PR title, description, or branch name. With the GitHub integration, PR mentions in comments and commit messages can also be configured to auto-link. Linked pull requests appear in the story or bug's Activities and in the Linked Items section, showing status (open, merged, closed) and a direct link to the PR.",
-    "synonyms": [
-      "PR"
-    ],
-    "related": [
-      "Activities",
-      "GitHub Integration",
-      "Linked Items",
-      "Story"
-    ]
-  },
-  {
     "name": "Release",
     "definition": "A key delivery milestone represented by a date, created as release markers on timelines. Release names must be unique within a timeline. Releases can be surfaced in team backlogs: Scrum backlogs show releases as horizontal rows between sprints; Kanban backlogs let you select one release to highlight items projected to complete within that window.",
     "synonyms": [
@@ -852,32 +522,6 @@
     ]
   },
   {
-    "name": "Rollout",
-    "definition": "A controlled, gradual release of a feature to an increasing subset of users, customers, or environments. Rollouts reduce the risk of a full release by allowing teams to monitor behavior and catch issues before exposing a feature to all users. In Atono, rollouts are implemented by configuring feature flag slices to target specific customers or locations and expanding the targeting over time.",
-    "synonyms": [
-      "Gradual Rollout",
-      "Phased Release"
-    ],
-    "related": [
-      "Customer",
-      "Feature Flag",
-      "Flag Configuration",
-      "Flag Targeting",
-      "Slice"
-    ]
-  },
-  {
-    "name": "Saved View",
-    "definition": "A named, personal collection of filters, sorting, and column customizations on the Everything page that can be returned to without reapplying settings. Can be shared with users or teams, and added as widgets to the Home page. View names must be unique per user (up to 100 characters).",
-    "synonyms": [],
-    "related": [
-      "Everything (Page)",
-      "Filter",
-      "Shared View",
-      "Widget"
-    ]
-  },
-  {
     "name": "Scrum",
     "definition": "A team workflow type focused on time-boxed iterations called sprints. Scrum teams plan using story points and velocity, with team pages including Backlog, In Progress, and Sprint Calendar. Supports burndown charts, velocity tracking, and sprint-based planning.",
     "synonyms": [],
@@ -893,36 +537,6 @@
     ]
   },
   {
-    "name": "Scrum Master",
-    "definition": "The Scrum team role responsible for facilitating Scrum ceremonies, coaching the team on Scrum practices, and removing impediments that block progress. The Scrum Master is a servant-leader who protects the team from outside distractions, ensures the sprint goal stays visible, and drives continuous improvement through retrospectives. Scrum Master is not a formal permission role in Atono but is typically the team member who manages sprint cadence, maintains the burndown chart, and coordinates with stakeholders during sprint reviews.",
-    "synonyms": [
-      "SM",
-      "Agile Coach"
-    ],
-    "related": [
-      "Backlog Owner",
-      "Blocker",
-      "Burndown Chart",
-      "Daily Standup",
-      "Retrospective",
-      "Scrum",
-      "Sprint",
-      "Sprint Goal"
-    ]
-  },
-  {
-    "name": "Search",
-    "definition": "A global fuzzy keyword search across all stories, bugs, and epics the user has permission to view. Search matches against titles, item IDs, descriptions, user stories, acceptance criteria, and active (unresolved) comments. Results are ranked by relevance. Search is accessible from the top navigation bar and can be used alongside filters on the Everything page for more precise queries.",
-    "synonyms": [
-      "Global Search"
-    ],
-    "related": [
-      "Everything (Page)",
-      "Filter",
-      "Item ID"
-    ]
-  },
-  {
     "name": "Severity",
     "definition": "The degree of impact a bug has on users or core system functionality, independent of how likely users are to encounter it. Severity is distinct from probability: a crash on a rare code path is high severity but low probability. In Atono, severity is captured as part of the impact field during bug triage, contributing to the overall risk rating.",
     "synonyms": [],
@@ -932,41 +546,6 @@
       "Impact",
       "Probability",
       "Risk Rating"
-    ]
-  },
-  {
-    "name": "Slack Integration",
-    "definition": "A workspace integration connecting Atono to a Slack workspace, enabling automated updates and communication across both platforms. Capabilities include: creating dedicated Slack channels for teams and individual stories, posting updates when team settings or feature flag configurations change, and connecting individual Atono user accounts to their Slack identities for mention routing. Configured by an Administrator from Workspace Settings.",
-    "synonyms": [
-      "Slack"
-    ],
-    "related": [
-      "Administrator",
-      "Feature Flag",
-      "Notification",
-      "Team",
-      "Workspace"
-    ]
-  },
-  {
-    "name": "Slice",
-    "definition": "A defined subset within an environment for a feature flag, based on customer and/or location attributes with specific operators (is, is not, contains, is one of, is in, is not in). Each slice has an ON/OFF value. Evaluated top-to-bottom with first-match logic; default value used if no slice matches. A slice can have up to two conditions (one customer, one location).",
-    "synonyms": [],
-    "related": [
-      "Environment",
-      "Feature Flag",
-      "Flag Configuration"
-    ]
-  },
-  {
-    "name": "Split",
-    "definition": "An action dividing a story into two stories by moving selected acceptance criteria into a new story. Preserves team, product theme, timebox, and feature flags on both stories. AC parents may be moved or copied based on children selection. Both stories are automatically linked. Available only to users with appropriate permissions on managed backlogs.",
-    "synonyms": [],
-    "related": [
-      "Acceptance Criteria",
-      "Epic",
-      "Linked Items",
-      "Story"
     ]
   },
   {
@@ -1003,7 +582,7 @@
   },
   {
     "name": "Sprint Goal",
-    "definition": "A concise objective that the Scrum team commits to achieving by the end of a sprint. The sprint goal gives the sprint a unified purpose and helps the team make decisions when work needs to be adjusted mid-sprint. Having a sprint goal distinct from individual story completion encourages teams to think about outcomes rather than outputs.",
+    "definition": "A single, concise objective the Scrum team commits to achieving by the end of a sprint, set during sprint planning. The sprint goal provides focus and helps the team prioritize decisions when scope changes mid-sprint. In Atono, the sprint goal is displayed at the top of the active sprint view and is included in sprint review and retrospective records.",
     "synonyms": [],
     "related": [
       "Active Sprint",
@@ -1099,6 +678,23 @@
     ]
   },
   {
+    "name": "Story Status",
+    "definition": "The current position of a story within a team's workflow, represented by a workflow step such as To Do, In Progress, In Review, or Done. Story status determines which workflow category the item falls into and affects visibility on boards, burndown charts, and velocity calculations. Status changes are recorded in the Activities log with a timestamp and the name of the user who made the change.",
+    "synonyms": [
+      "Item Status",
+      "Work Item Status"
+    ],
+    "related": [
+      "Activities",
+      "Burndown Chart",
+      "Story",
+      "Velocity",
+      "Workflow",
+      "Workflow Category",
+      "Workflow Step"
+    ]
+  },
+  {
     "name": "Subtask",
     "definition": "An implementation step within a story or bug with title, optional description (up to 1000 chars with rich text), assignee, and status (To do, In progress, Done, Won't do). Displayed with a progress meter excluding Won't do items. Changes are logged in Activities with dedicated filter. Can be reordered by dragging. Not available on drafts.",
     "synonyms": [],
@@ -1133,17 +729,6 @@
     ]
   },
   {
-    "name": "Throughput",
-    "definition": "The number of work items a team completes per unit of time, regardless of their size or complexity. Throughput is a flow-based metric often used alongside cycle time to understand team delivery rate. Unlike velocity, throughput does not weight items by story points, making it useful for teams that prefer not to estimate. In Kanban, throughput is a primary indicator of team performance.",
-    "synonyms": [],
-    "related": [
-      "Cycle Time",
-      "Kanban",
-      "Lead Time",
-      "Velocity"
-    ]
-  },
-  {
     "name": "Timeline",
     "definition": "A visual schedule of timeboxes created and owned by a user, showing how work is organized over time. Supports scrolling, zooming (days to 5 years), filtering by team/product theme, release markers, and timebox management (add, reorder, resize, color, remove). Displays warnings for timeboxes ending within 3 months that have delivery risks.",
     "synonyms": [],
@@ -1167,15 +752,17 @@
     ]
   },
   {
-    "name": "Usage Tracking",
-    "definition": "Recording user interactions with features to power Feature Engagement graphs. Implemented by calling SDK record() methods in code or by mapping clicks via the Atono Chrome extension. Requires SDK v1.1.0+ running client-side. Events include story ID, environment, optional customer, and auto-detected location from IP.",
-    "synonyms": [],
+    "name": "Triage",
+    "definition": "The process of reviewing newly created bugs or issues to assess their severity, priority, and validity before they enter active development. During triage a team member verifies the report, assigns a severity level, sets a priority, and routes the item to the appropriate team or backlog. In Atono, bug triage is supported by severity and priority fields, bulk editing, and filtered views that surface unreviewed items.",
+    "synonyms": [
+      "Bug Triage",
+      "Issue Triage"
+    ],
     "related": [
-      "Atono Chrome Extension",
-      "Environment",
-      "Feature Engagement",
-      "SDK",
-      "Story"
+      "Bug",
+      "Bug Triage",
+      "Priority",
+      "Severity"
     ]
   },
   {
@@ -1203,30 +790,6 @@
     ]
   },
   {
-    "name": "Velocity Chart",
-    "definition": "A bar chart showing the number of story points a Scrum team completed in each past sprint, used to visualize trends in team throughput over time. The velocity chart helps teams identify whether they are improving, declining, or maintaining consistent output, and informs capacity planning for future sprints.",
-    "synonyms": [],
-    "related": [
-      "Burndown Chart",
-      "Scrum",
-      "Sprint",
-      "Story Points",
-      "Velocity",
-      "Velocity Averaging Window"
-    ]
-  },
-  {
-    "name": "Version History",
-    "definition": "A record of all changes to a story or bug's content (title, user stories, acceptance criteria, description) showing additions (green) and deletions (red strikethrough). Multiple edits within a short timeframe are grouped. Previous versions can be restored, creating a new version. AI Context has separate version history per section.",
-    "synonyms": [],
-    "related": [
-      "Activities",
-      "AI Context",
-      "Bug",
-      "Story"
-    ]
-  },
-  {
     "name": "Webhook",
     "definition": "An HTTP callback that sends real-time event data from Atono to an external URL when a specified event occurs, such as a story being created, updated, or moved to a new workflow step. Webhooks enable integrations with external systems like CI/CD pipelines, dashboards, or custom automation tools without requiring the external system to poll Atono continuously.",
     "synonyms": [
@@ -1237,20 +800,6 @@
       "GitHub Integration",
       "Slack Integration",
       "Workflow"
-    ]
-  },
-  {
-    "name": "WIP Limit",
-    "definition": "A maximum number of work items permitted to be simultaneously active in a single workflow step or across the entire In Progress category. WIP limits are a core Kanban practice that force teams to finish work before starting new items, reducing context switching and identifying process bottlenecks. In Atono, workflow steps can be configured with WIP limits visible on the In Progress page.",
-    "synonyms": [
-      "Work in Progress Limit"
-    ],
-    "related": [
-      "In Progress (Page)",
-      "In Progress (Workflow Category)",
-      "Kanban",
-      "Throughput",
-      "Workflow Step"
     ]
   },
   {
@@ -1282,15 +831,6 @@
       "Cycle Time",
       "Workflow",
       "Workflow Step"
-    ]
-  },
-  {
-    "name": "Workspace",
-    "definition": "The top-level container for all teams, stories, bugs, users, and other elements in Atono for a company. Each workspace has a unique URL (example.atono.io), name, up to 50 teams, and plan-based limits for users and storage. Created during initial signup with the creator as Workspace Owner.",
-    "synonyms": [],
-    "related": [
-      "Team",
-      "Workspace Owner"
     ]
   }
 ]
